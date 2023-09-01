@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     min-width: 400px;
+    background-image: url("../img/textura.jpg");
 }
 
 .container-header {
@@ -58,9 +59,73 @@ body {
 }
 
 .container-section {
-
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: flex;
+    flex-direction: column;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.division-titulo {
+
+    width: 90%;
+    background-color: transparent;
+    margin-bottom: 35px;
+    padding-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-division-titulo {
+    border-radius: 45%;
+    width: 400px;
+    height: 100px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(140,140,140,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fondo-division-titulo h1 {
+    color: rgba(17,91,92,1);
+    font-size: 35px;
+    margin: 6px;
+}
+
+.fondo-division-titulo img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    -webkit-box-shadow: -8px 7px 23px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 7px 23px -1px rgba(0,0,0,0.75);
+    box-shadow: -8px 7px 23px -1px rgba(0,0,0,0.75);
+}
+
+.fondo-division-titulo .logo-1 {
+    transform: translateX(-30px);
+}
+.fondo-division-titulo .logo-2 {
+    transform: translateX(30px);
+}
+.fondo-division-titulo .logo-3 {
+    transform: translateX(-50px);
+}
+.fondo-division-titulo .logo-4 {
+    transform: translateX(50px);
+}
+
+@media (max-width: 740px) {
+    .container-section {
+        margin-top: 80px;
+    }
+
+    .quienes-somos {
+        margin-bottom: 105px;
+    }
 }
 
 @media (max-width: 600px) {

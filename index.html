@@ -6,6 +6,8 @@
 	<link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
 	<link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="css/card-presentacion.css">
+  <link rel="stylesheet" href="./css/responsive-servicios.css">
   <script src="./js/navbar.js" defer></script>
 	<title>Clinica Bombicino</title>
 </head>
@@ -43,11 +45,73 @@
     </nav>
 	</header>
 	<section class="container-section">
-		<article></article>
-		<article></article>
+    <div class="division-titulo quienes-somos">
+      <div class="fondo-division-titulo">
+        <img class="logo-1" src="./img/jb.jpg" alt="Logo">
+        <h1>Bienvenido</h1>
+        <img class="logo-2" src="./img/jb.jpg" alt="Logo">
+      </div>
+    </div>
+    <article class="container-card-presentacion">
+      <div class="card">
+        <img src="./img/card-presentacion.jpg" />
+        <div>
+          <h2>Jorge Oscar Bombicino</h2>
+          <h3>Especialista atletas de alto rendimiento</h3>
+          <p>
+            Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
+          </p>
+          <button>Conocenos mas haciendo click Aqui</button>
+        </div>
+      </div>
+    </article>
+    <div class="division-titulo">
+      <div class="fondo-division-titulo">
+        <img class="logo-3" src="./img/jb.jpg" alt="Logo">
+        <h1>Servicios</h1>
+        <img class="logo-4" src="./img/jb.jpg" alt="Logo">
+      </div>
+    </div>
+    <article class="container-galeria-servicios">
+      <div class="grid">
+        <div class="item">
+          <p>Kinesiologia</p>
+          <div class="img-wrapper">
+            <img class="img-servicios" src="./img/servicios-kinesiologia.png" alt='Kinesiologia'>
+          </div>
+        </div>
+        <div class="item">
+          <p>Nutricion</p>
+          <div class="img-wrapper">
+            <img class="img-servicios" src='./img/servicios-nutricion.png' alt='Nutricion'>
+          </div>
+        </div>
+        <div class="item">
+          <p>Consultas Medicas</p>
+          <div class="img-wrapper">
+            <img class="img-servicios" src='./img/servicios-consultasmedicas.png' alt='Consultas Medicas'>
+          </div>
+        </div>
+        <div class="item">
+          <p>Entrenamiento Personalizado</p>
+          <div class="img-wrapper">
+            <img class="img-servicios" src='./img/servicios-entrenamientoPersonalizado.JPG' alt="Entrenamiento Personalizado">
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="division-titulo">
+      <div class="fondo-division-titulo">
+        <img class="logo-3" src="./img/jb.jpg" alt="Logo">
+        <h1>Contacto</h1>
+        <img class="logo-4" src="./img/jb.jpg" alt="Logo">
+      </div>
+    </div>
+    <article></article>
 	</section>
 	<aside></aside>
 	<footer></footer>
-
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+  <script  src="./js/responsive-servicios.js"></script>
 </body>
 </html>
