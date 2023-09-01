@@ -3,8 +3,38 @@ body {
     padding: 0;
     min-width: 400px;
     background-image: url("../img/textura.jpg");
+    overflow-y: scroll;
+    /*Thumb color and background color for firefox */
+    scrollbar-color: #00c6ff #242942;
+    overflow-x: none;
 }
 
+/*---- Scroll bar ---*/
+.sub-div {
+    max-height: 100vh;
+    overflow-y: scroll;
+    /*Thumb color and background color for firefox */
+    scrollbar-color: #00c6ff #242942;
+    overflow-x: none;
+  }
+  /*  ::-webkit- is for chrome */
+  ::-webkit-scrollbar {
+    width: 1.2em;
+    overflow-x: none;
+  }
+  ::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+
+ 
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff);
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 0.3em;
+  }
+  
+/*Fin scroll bar*/
 .container-header {
     display: flex;
     justify-content: left;
