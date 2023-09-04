@@ -1,0 +1,24 @@
+.container-quienes-somos {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    border-radius: 30px;
+    background: linear-gradient(rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+}
+
+.container-quienes-somos h2 {
+    color: rgba(17,91,92,1);
+    background-color: white;
+    border-radius: 20px;
+    font-size: 40px;
+}
+
+.container-quienes-somos p {
+    text-align: justify;
+    color: white;
+    padding: 10px;
+}
+
