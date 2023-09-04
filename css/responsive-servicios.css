@@ -42,6 +42,7 @@
 	--i: 0.5rem;
 	--c1: deeppink;
 	--c2: orange;
+	border: 1px double rgba(17,91,92,1);
 	/* background-image: url("../img/logo.jpg"); */
 	background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(140,140,140,1) 100%);
 	/* background: repeating-linear-gradient(var(--a, 45deg), var(--c1), var(--c1) var(--i), var(--c2) var(--i), var(--c2) calc(var(--i) * 2)); */
@@ -64,8 +65,7 @@
 
 .item:nth-child(2),
 .item:nth-child(3) {
-	--c2: darkorchid;
-	--p: 50% 100%;
+	background: linear-gradient(rgba(140,140,140,1) 100%), 0deg, rgba(255,255,255,1) 0%;
 	
 }
 
@@ -86,6 +86,7 @@
 	padding: 0.5rem 0.75rem;
 	font-size: clamp(1.1rem, 5vmin, 2.8rem);
 	transition: opacity 300ms;
+	border-radius: 10px;
 }
 
 .grid:has(.item:first-child:hover) .item:not(:first-child),

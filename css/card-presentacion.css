@@ -56,12 +56,18 @@
 
 .card button {
   border: 0;
-  background: linear-gradient(90deg, #5448de, #5448de);
-  color: #f8f8f8;
+  background: white;
+  color: rgba(17,91,92,1);
   font-family: inherit;
   padding: 16px 26px;
   font-size: 16px;
   border-radius: 40px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: rgb(43, 163, 133);
+  transition: background-color 1s;
 }
 
 @media (width <= 740px) {
