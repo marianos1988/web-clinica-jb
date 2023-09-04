@@ -1,0 +1,63 @@
+
+
+.container-carrousel {
+  width: 95%;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+
+}
+
+.slider {
+  width: 95%;
+  height: 500px;
+  position: relative;
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+  
+}
+.slider .slide {
+  width: 20%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+  border: 2px solid rgba(17,91,92,1);
+}
+.slider .slide:nth-child(1) {
+  background: url("../img/carrousel-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(2) {
+  background: url("..//img/carrousel-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(3) {
+  background: url("../img/carrousel-3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(4) {
+  background: url("../img/carrousel-4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:nth-child(5) {
+  background: url("..//img/carrousel-5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.slider .slide:hover {
+  width: 60%;
+  cursor: pointer;
+}
