@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+.container-contact 
+{	
+	background-image: url(../img/textura.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+}
+.container-contact .content 
+{	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 95%;
+	margin-top: 25px;
+	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+	text-align: center;
+	border-radius: 30px;
+}
+.container-contact .content h2 
+{	
+	width: 200px;
+	color: #fff;
+	color: rgba(17,91,92,1);
+    background-color: white;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 40px;
+    -webkit-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
+}
+.container-contact .content p 
+{
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+}
+.container 
+{
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+	margin-top: 30px;
+}
+.container .contactInfo 
+{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contactInfo .box 
+{
+	position: relative;
+	width: 100%;
+	height: 170px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+	margin: 10px 0 10px 0;
+
+}
+.container .contactInfo .box .ico-footer
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30%;
+}
+
+.container .contactInfo .box .text 
+{
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin-left: 20px;
+	font-size: 1.1em;
+	color: #fff;
+	font-weight: 300;
+}
+.container .contactInfo .box .text h3 
+{	
+	text-decoration: underline;
+	font-weight: 900;
+	color: white;
+}
+.container .contactInfo .txt
+{
+	color: #fff;
+	margin-top: 50px;
+	font-weight: 500;
+	padding-left: 10px;
+	border-left: 50px solid #ffffff;
+	padding-right: 10px;
+	border-right: 50px solid #fff;
+	line-height: 1em;
+}
+
+.box .item-footer .item-red-social {
+	display: flex;
+	width: 100%;
+
+
+
+}
+
+.box .item-footer .item-red-social p {
+	color: #fff;
+	font-weight: 900;
+	margin-left: 15px;
+
+}
+
+.box .group-redes-sociales {
+	display: flex;
+	flex-direction: column;
+}
+
+.box .group-redes-sociales h3 {
+	text-decoration: underline;
+	font-weight: 900;
+	color: white;
+
+}
+
+
+/* lets make it responsive */
+@media (max-width: 740px)
+{
+	.container
+	{
+		flex-direction: column;
+	}
+	.container .contactInfo
+	{
+		width: 100%;
+	}
+
+}

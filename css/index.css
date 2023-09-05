@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 400px;
+    min-width: 450px;
     background-image: url("../img/textura.jpg");
     overflow-y: scroll;
     /*Thumb color and background color for firefox */

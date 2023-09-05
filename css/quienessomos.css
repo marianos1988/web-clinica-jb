@@ -12,8 +12,12 @@
 .container-quienes-somos h2 {
     color: rgba(17,91,92,1);
     background-color: white;
+    padding: 5px;
     border-radius: 20px;
     font-size: 40px;
+    -webkit-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
+	box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
 }
 
 .container-quienes-somos p {
