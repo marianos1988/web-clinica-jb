@@ -88,6 +88,7 @@
 	font-size: clamp(1.1rem, 5vmin, 2.8rem);
 	transition: opacity 300ms;
 	border-radius: 10px;
+	max-width: 190px;
 	-webkit-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
 	box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);

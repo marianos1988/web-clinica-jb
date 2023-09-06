@@ -115,6 +115,7 @@ body {
     width: 100%;
     align-items: center;
     justify-content: center;
+    animation: aparecer 1s ease;
 }
 
 .division-titulo {
@@ -191,4 +192,14 @@ body {
         transform: translate(-20px, -30px);
     }
 
+}
+
+@keyframes aparecer {
+    
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
