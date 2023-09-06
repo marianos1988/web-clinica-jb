@@ -37,25 +37,30 @@
 
 .card h2 {
   font-size: 22px;
+  font-family: 'Signika Negative', sans-serif;
   margin-right: 30px;
   color: white;
 }
 
 .card h3 {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: white;
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: white;
   margin-bottom: 24px;
+  font-family: 'Signika Negative', sans-serif;
 }
 
 .card button {
   border: 0;
+  font-family: 'Signika Negative', sans-serif;
+  font-size: 16px;
   background: white;
   color: rgba(17,91,92,1);
   font-family: inherit;
@@ -63,11 +68,18 @@
   font-size: 16px;
   border-radius: 40px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .card button:hover {
   background-color: rgb(43, 163, 133);
   transition: background-color 1s;
+}
+
+.boton-conocenos-mas {
+  text-decoration: none;
+  color: inherit;
+  color: rgba(17,91,92,1) 0%;
 }
 
 @media (width <= 740px) {

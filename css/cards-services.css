@@ -1,22 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
 
-/* * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: "Jost", sans-serif;
-}
-
-body {
-  padding: 60px 20px;
-  color: rgb(211, 211, 211);
-  background: #100034;
-}
-
-p{
-  margin: 10px 0px;
-  letter-spacing: 2px;
-} */
 .container-cards-servicios {
   display: flex;
   width: 98%;

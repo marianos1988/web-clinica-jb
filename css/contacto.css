@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-
+ 
 .container-contact 
 {	
 	background-image: url(../img/textura.jpg);
@@ -22,6 +22,7 @@
 }
 .container-contact .content h2 
 {	
+	font-family: "Jost", sans-serif;
 	width: 200px;
 	color: #fff;
 	color: rgba(17,91,92,1);
@@ -38,6 +39,7 @@
 	color: #fff;
 	font-size: 1.1em;
 	font-weight: 300;
+	font-family: 'Signika Negative', sans-serif;
 }
 .container 
 {
@@ -86,7 +88,7 @@
 	font-weight: 300;
 }
 .container .contactInfo .box .text h3 
-{	
+{	  font-family: "Jost", sans-serif;
 	text-decoration: underline;
 	font-weight: 900;
 	color: white;
@@ -101,11 +103,13 @@
 	padding-right: 10px;
 	border-right: 50px solid #fff;
 	line-height: 1em;
+	font-family: 'Signika Negative', sans-serif;
 }
 
 .box .item-footer .item-red-social {
 	display: flex;
 	width: 100%;
+	font-family: 'Signika Negative', sans-serif;
 
 
 
