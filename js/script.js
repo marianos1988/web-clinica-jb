@@ -6,6 +6,30 @@ const containerFooter = document.querySelector(".container-footer");
 const containerSection = document.querySelector(".container-section");
 const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
 
+//mover icono whatsapp
+
+const desplazarIconoWP = () =>{
+
+  const verificarVisibilidad  = (entrada)=> {
+    
+    if(entrada[0].isIntersecting){
+      
+      document.querySelector(".float-wp").style.bottom = "160px";
+      document.querySelector(".float-wp").style.transition= "bottom .5s ease";
+
+    } else {
+
+      document.querySelector(".float-wp").style.bottom = "60px";
+      document.querySelector(".float-wp").style.transition= "bottom .5s ease";
+    }
+  }
+  
+  const observer = new IntersectionObserver(verificarVisibilidad)
+
+  observer.observe(containerFooter); 
+}
+
+desplazarIconoWP();
 
 btnConocenosMas.addEventListener("click",()=>{
 
@@ -229,7 +253,10 @@ btnInicio.addEventListener("click",()=>{
     containerFooter.innerHTML = footer;
   
   });
+
+  //Muestra fotos del responsive servicios
   mostrarServiciosResponsive();
+  desplazarIconoWP();
 
 });
 
@@ -281,3 +308,5 @@ const mostrarServiciosResponsive = () => {
     })
   })
 }
+
+
