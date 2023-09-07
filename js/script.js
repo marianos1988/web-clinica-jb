@@ -7,7 +7,6 @@ const containerSection = document.querySelector(".container-section");
 const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
 
 //mover icono whatsapp
-
 const desplazarIconoWP = () =>{
 
   const verificarVisibilidad  = (entrada)=> {
@@ -26,7 +25,7 @@ const desplazarIconoWP = () =>{
   
   const observer = new IntersectionObserver(verificarVisibilidad)
 
-  observer.observe(containerFooter); 
+  observer.observe(document.querySelector(".group-items-footer")); 
 }
 
 desplazarIconoWP();
@@ -265,6 +264,7 @@ btnQuienesSomos.addEventListener("click",()=>{
   containerSection.innerHTML = quienesSomos;
   containerFooter.innerHTML = "";
   containerFooter.innerHTML = footer;
+  desplazarIconoWP();
 
 });
 
@@ -275,6 +275,7 @@ btnContacto.addEventListener("click",()=>{
   containerSection.innerHTML = contacto;
   containerFooter.innerHTML = "";
   
+
 
 });
 
