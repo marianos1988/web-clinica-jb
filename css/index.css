@@ -9,8 +9,33 @@ body {
     overflow-x: none;
     
 }
-/*font-family: 'Anton', sans-serif;*/
-/*font-family: 'Signika Negative', sans-serif;*/
+
+.float-wp {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #25d366;
+    bottom: 60px;
+    right: 25px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 999;
+
+}
+
+.float-wp:hover {
+    background-color: #28e76e;
+}
+
+.fa-whatsapp {
+
+    font-size: 50px;
+
+}
+
+
 
 /*---- Scroll bar ---*/
 .sub-div {
@@ -173,7 +198,18 @@ article, footer {
 .fondo-division-titulo .logo-4 {
     transform: translateX(50px);
 }
-
+@media (min-width: 1246px) {
+    .float-wp {
+       bottom : 60px;
+       transition: bottom .5s ease;
+    }
+}
+@media (max-width: 1245px) {
+    .float-wp {
+        transition: bottom .5s ease;
+        bottom: 155px;
+    }
+}
 @media (max-width: 740px) {
     .container-section {
         margin-top: 80px;
@@ -182,8 +218,13 @@ article, footer {
     .quienes-somos {
         margin-bottom: 105px;
     }
+}
 
-
+@media (max-width: 735px) {
+    .float-wp {
+        bottom: 60px;
+        transition: bottom .5s ease;
+    }
 }
 
 @media (max-width: 600px) {
