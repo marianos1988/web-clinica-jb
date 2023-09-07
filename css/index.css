@@ -118,6 +118,9 @@ body {
     animation: aparecer 1s ease;
 }
 
+article, footer {
+    animation: aparecer .5s ease-in;
+}
 .division-titulo {
 
     width: 90%;

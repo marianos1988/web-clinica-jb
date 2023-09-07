@@ -4,9 +4,20 @@ const btnContacto = document.querySelector(".btn-contacto");
 const section = document.querySelector(".container-section");
 const containerFooter = document.querySelector(".container-footer");
 const containerSection = document.querySelector(".container-section");
+const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+
+
+btnConocenosMas.addEventListener("click",()=>{
+
+  containerSection.innerHTML = ``;
+  containerSection.innerHTML = quienesSomos;
+  containerFooter.innerHTML = "";
+  containerFooter.innerHTML = footer;
+
+});
 
 const index = `
-  <section class="container-section">
+
     <div class="division-titulo quienes-somos">
       <div class="fondo-division-titulo">
         <img class="logo-1" src="./img/jb.jpg" alt="Logo">
@@ -23,7 +34,7 @@ const index = `
           <p>
             Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
           </p>
-          <a class="boton-conocenos-mas" href="./quienessomos.html"><button>Conocenos mas...</button></a>
+          <button class="boton-conocenos-mas">Conocenos mas...</button>
         </div>
       </div>
     </article>
@@ -95,7 +106,6 @@ const index = `
           </div>
         </div>
     </article>
-  </section>
 `;
 
 const quienesSomos = `
@@ -120,49 +130,51 @@ const quienesSomos = `
 `;
 
 const contacto = `
-  <div class="content">
-    <h2>Contacto</h2>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
-  </div>
-  <div class="container">
-    <div class="contactInfo">
-      <div class="box">
-        <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
-        <div class="text">
-          <h3>Domicilio</h3>
-          <p>Av. De Los Incas 5150<br>Ciudad Autonoma de Buenos Aires<br>C1427</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>
-        <div class="text">
-          <h3>Telefono</h3>
-          <p>000-000-0000</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-        <div class="text">
-          <h3>Email</h3>
-          <p>wrub7d78i0e@temporary-mail</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="group-redes-sociales">
-          <h3>Redes Sociales</h3>
-          <div class="item-footer redes-sociales-footer">
-              <div class="item-red-social">
-                <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
-                <p>Instagram</p>
-              </div>
-              <div class="item-red-social">
-                <div class="ico-footer"><a href="https://www.facebook.com/clinicajorgebombicino" target="_blank"><img src="./img/facebook-ico.png" alt="Facebook"></a></div>
-                <p>Facebook</p>
-              </div>
+  <article class="container-contact">
+    <div class="content">
+      <h2>Contacto</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="text">
+            <h3>Domicilio</h3>
+            <p>Av. De Los Incas 5150<br>Ciudad Autonoma de Buenos Aires<br>C1427</p>
           </div>
         </div>
+        <div class="box">
+          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>
+          <div class="text">
+            <h3>Telefono</h3>
+            <p>000-000-0000</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+          <div class="text">
+            <h3>Email</h3>
+            <p>wrub7d78i0e@temporary-mail</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="group-redes-sociales">
+            <h3>Redes Sociales</h3>
+            <div class="item-footer redes-sociales-footer">
+                <div class="item-red-social">
+                  <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
+                  <p>Instagram</p>
+                </div>
+                <div class="item-red-social">
+                  <div class="ico-footer"><a href="https://www.facebook.com/clinicajorgebombicino" target="_blank"><img src="./img/facebook-ico.png" alt="Facebook"></a></div>
+                  <p>Facebook</p>
+                </div>
+            </div>
+          </div>
+      </div>
     </div>
-  </div>
+  </article>
 `;
 
 const footer = `
@@ -203,14 +215,69 @@ const footer = `
 
 btnInicio.addEventListener("click",()=>{
   containerSection.innerHTML = ``;
-
   containerSection.innerHTML = index;
+  containerFooter.innerHTML = "";
+  containerFooter.innerHTML = footer;
+
+  const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+
+  btnConocenosMas.addEventListener("click",()=>{
+
+    containerSection.innerHTML = ``;
+    containerSection.innerHTML = quienesSomos;
+    containerFooter.innerHTML = "";
+    containerFooter.innerHTML = footer;
+  
+  });
+  mostrarServiciosResponsive();
 
 });
 
 btnQuienesSomos.addEventListener("click",()=>{
   containerSection.innerHTML = ``;
-
   containerSection.innerHTML = quienesSomos;
+  containerFooter.innerHTML = "";
+  containerFooter.innerHTML = footer;
 
 });
+
+
+
+btnContacto.addEventListener("click",()=>{
+  containerSection.innerHTML = "";
+  containerSection.innerHTML = contacto;
+  containerFooter.innerHTML = "";
+  
+
+});
+
+
+// REsponsive Servicios
+const mostrarServiciosResponsive = () => {
+  const grid = document.querySelector('.grid')
+  const items = document.querySelectorAll('.item')
+  
+  items.forEach((item) => {
+    item.addEventListener('mouseenter', () => {
+      gsap.to(grid, {
+        '--track': '2fr',
+        duration: 0.3,
+      })
+      gsap.to(item, {
+        '--innerTrack': '1fr',
+        duration: 0.3,
+      })
+    })
+  
+    item.addEventListener('mouseleave', () => {
+      gsap.to(grid, {
+        '--track': '1fr',
+        duration: 0.3,
+      })
+      gsap.to(item, {
+        '--innerTrack': '0fr',
+        duration: 0.3,
+      })
+    })
+  })
+}
