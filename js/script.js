@@ -41,94 +41,81 @@ btnConocenosMas.addEventListener("click",()=>{
 
 const index = `
 
-    <div class="division-titulo quienes-somos">
-      <div class="fondo-division-titulo">
-        <img class="logo-1" src="./img/jb.jpg" alt="Logo">
-        <h1>Bienvenido</h1>
-        <img class="logo-2" src="./img/jb.jpg" alt="Logo">
+<article class="container-card-presentacion">
+  <div class="card">
+    <img src="./img/card-presentacion.jpg" />
+    <div>
+      <h2>Jorge Oscar Bombicino</h2>
+      <h3>Especialista atletas de alto rendimiento</h3>
+      <p>
+        Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
+      </p>
+      <button class="boton-conocenos-mas">Conocenos mas...</button>
+    </div>
+  </div>
+</article>
+<article class="container-galeria-servicios">
+  <div class="grid">
+    <div class="item" id="video-1">
+      <p>Pilar</p>
+      <div class="img-wrapper">
+        <video class="vid-servicios video-1" src="./videos/video-1.mp4"></video>
       </div>
     </div>
-    <article class="container-card-presentacion">
-      <div class="card">
-        <img src="./img/card-presentacion.jpg" />
-        <div>
-          <h2>Jorge Oscar Bombicino</h2>
-          <h3>Especialista atletas de alto rendimiento</h3>
-          <p>
-            Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
-          </p>
-          <button class="boton-conocenos-mas">Conocenos mas...</button>
-        </div>
-      </div>
-    </article>
-    <div class="division-titulo">
-      <div class="fondo-division-titulo">
-        <img class="logo-3" src="./img/jb.jpg" alt="Logo">
-        <h1>Servicios</h1>
-        <img class="logo-4" src="./img/jb.jpg" alt="Logo">
+    <div class="item" id="video-2">
+      <p>Capital Federal</p>
+      <div class="img-wrapper">
+        <video class="vid-servicios video-2" src="./videos/video-1.mp4"></video>
       </div>
     </div>
-    <article class="container-galeria-servicios">
-      <div class="grid">
-        <div class="item">
-          <p>Kinesiologia</p>
-          <div class="img-wrapper">
-            <img class="img-servicios" src="./img/servicios-kinesiologia.png" alt='Kinesiologia'>
-          </div>
-        </div>
-        <div class="item">
-          <p>Nutricion</p>
-          <div class="img-wrapper">
-            <img class="img-servicios" src='./img/servicios-nutricion.png' alt='Nutricion'>
-          </div>
-        </div>
-        <div class="item">
-          <p>Consultas Medicas</p>
-          <div class="img-wrapper">
-            <img class="img-servicios" src='./img/servicios-consultasmedicas.png' alt='Consultas Medicas'>
-          </div>
-        </div>
-        <div class="item">
-          <p>Entrenamiento Personalizado</p>
-          <div class="img-wrapper">
-            <img class="img-servicios" src='./img/servicios-entrenamientoPersonalizado.JPG' alt="Entrenamiento Personalizado">
-          </div>
-        </div>
+    <div class="item" id="video-3">
+      <p>Consultas Medicas</p>
+      <div class="img-wrapper">
+        <video class="vid-servicios video-3" src="./videos/video-1.mp4"></video>
       </div>
-    </article>
-    <article class="container-cards-servicios">
-        <div class="card-service">
-          <div class="card-img-shadow"><img src="./img/servicios-kinesiologia.png" alt="wanda"></div>
-          <div class="card-content">
-            <h2>Kinesiología</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
-          </div>
-        </div>
-      
-        <div class="card-service">
-          <div class="card-img-shadow"><img src="./img/servicios-nutricion.png" alt="wanda"></div>
-          <div class="card-content">
-            <h2>Nutrición</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
-          </div>
-        </div>
+    </div>
+    <div class="item" id="video-4">
+      <p>Entrenamiento Personalizado</p>
+      <div class="img-wrapper">
+        <video class="vid-servicios video-4" src="./videos/video-1.mp4"></video>
+      </div>
+    </div>
+  </div>
+</article>
+<article class="container-cards-servicios">
+    <div class="card-service">
+      <div class="card-img-shadow"><img src="./img/servicios-kinesiologia.png" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Kinesiología</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
+    </div>
+  
+    <div class="card-service">
+      <div class="card-img-shadow"><img src="./img/servicios-nutricion.png" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Nutrición</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
+    </div>
 
-        <div class="card-service">
-          <div class="card-img-shadow"><img src="./img/servicios-consultasmedicas.png" alt="wanda"></div>
-          <div class="card-content">
-            <h2>Consultas Medicas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
-          </div>
-        </div>
+    <div class="card-service">
+      <div class="card-img-shadow"><img src="./img/servicios-consultasmedicas.png" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Consultas Medicas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
+    </div>
 
-        <div class="card-service">
-          <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
-          <div class="card-content">
-            <h2>Entrenamiento Personalizado</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
-          </div>
-        </div>
-    </article>
+    <div class="card-service">
+      <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Entrenamiento Personalizado</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
+    </div>
+</article>
+
 `;
 
 const quienesSomos = `
