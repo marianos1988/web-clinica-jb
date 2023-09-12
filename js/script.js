@@ -5,30 +5,33 @@ const section = document.querySelector(".container-section");
 const containerFooter = document.querySelector(".container-footer");
 const containerSection = document.querySelector(".container-section");
 const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+const btnWp = document.querySelector(".float-wp");
+var varWP = false;
+
 
 //mover icono whatsapp
-const desplazarIconoWP = () =>{
+// const desplazarIconoWP = () =>{
 
-  const verificarVisibilidad  = (entrada)=> {
+//   const verificarVisibilidad  = (entrada)=> {
     
-    if(entrada[0].isIntersecting){
+//     if(entrada[0].isIntersecting){
       
-      document.querySelector(".float-wp").style.bottom = "160px";
-      document.querySelector(".float-wp").style.transition= "bottom .5s ease";
+//       document.querySelector(".float-wp").style.bottom = "160px";
+//       document.querySelector(".float-wp").style.transition= "bottom .5s ease";
 
-    } else {
+//     } else {
 
-      document.querySelector(".float-wp").style.bottom = "60px";
-      document.querySelector(".float-wp").style.transition= "bottom .5s ease";
-    }
-  }
+//       document.querySelector(".float-wp").style.bottom = "60px";
+//       document.querySelector(".float-wp").style.transition= "bottom .5s ease";
+//     }
+//   }
   
-  const observer = new IntersectionObserver(verificarVisibilidad)
+//   const observer = new IntersectionObserver(verificarVisibilidad)
 
-  observer.observe(document.querySelector(".group-sucursales-footer")); 
-}
+//   observer.observe(document.querySelector(".group-sucursales-footer")); 
+// }
 
-desplazarIconoWP();
+// // desplazarIconoWP();
 
 btnConocenosMas.addEventListener("click",()=>{
 
@@ -38,6 +41,27 @@ btnConocenosMas.addEventListener("click",()=>{
   containerFooter.innerHTML = footer;
 
 });
+
+function abrirCerrarWP() {
+
+
+  if(varWP) {
+    document.querySelector(".group-wp-sucursal").style.display="none";
+    varWP = !varWP;
+  }
+  else if(!varWP) {
+    document.querySelector(".group-wp-sucursal").style.display= "inherit";
+    varWP = !varWP;
+  }
+}
+
+btnWp.addEventListener("click",()=>{
+
+  abrirCerrarWP();
+
+});
+
+
 
 const index = `
 
@@ -172,17 +196,17 @@ const contacto = `
       <div class="columna-sucursal">
         <h3>Villa Urquiza - C.A.B.A.</h3>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
           <div class="texto-direccion-contacto">
             <p>Av. De Los Incas 5150 - C1427</p>
           </div>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <div class="ico-contacto"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
           <p>011 1234-1234</p>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+          <div class="ico-contacto"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
           <p>scaba@gmail.com</p>
         </div>
       </div>
@@ -190,17 +214,17 @@ const contacto = `
       <div class="columna-sucursal">
         <h3>Pilar - Buenos Aires</h3>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
           <div class="texto-direccion-contacto">
             <p>Av. Moreno 560 - C1520</p>
           </div>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <div class="ico-contacto"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
           <p>011 4444-5555</p>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+          <div class="ico-contacto"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
           <p>pilar@gmail.com</p>
         </div>
       </div>
@@ -248,6 +272,11 @@ const footer = `
   </div> 
 `;
 
+
+
+
+
+
 btnInicio.addEventListener("click",()=>{
   containerSection.innerHTML = ``;
   containerSection.innerHTML = index;
@@ -267,7 +296,7 @@ btnInicio.addEventListener("click",()=>{
 
   //Muestra fotos del responsive servicios
   mostrarServiciosResponsive();
-  desplazarIconoWP();
+
 
 });
 

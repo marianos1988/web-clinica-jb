@@ -27,8 +27,37 @@ body {
 
 .float-wp:hover {
     background-color: #28e76e;
+    cursor: pointer;
 }
 
+.float-wp .group-wp-sucursal {
+    display:none;
+    position: absolute;
+    bottom: -45px;
+    right: 80px;
+
+}
+
+
+
+.float-wp .group-wp-sucursal a .item-sucursal-wp {
+    background-color: #25d366;
+    font-size: 18px;
+    border-radius: 10%;
+    padding: 5px;
+    margin: 5px 2px 5px 0;
+    border: 3px solid #fff;
+    color: #fff;
+    animation: aparecer .5s ease-in;
+}
+
+.float-wp .group-wp-sucursal a .item-sucursal-wp:hover {
+    background-color: #28e76e;
+}
+
+.float-wp .group-wp-sucursal a {
+    text-decoration: none;
+}
 .fa-whatsapp {
 
     font-size: 60px;

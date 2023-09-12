@@ -52,7 +52,7 @@
     padding: 3px 10px 3px 10px;
     background-color: white;
     border-radius: 50%;
-    margin: 0 6px;
+    transform: translateX(20px);
     -webkit-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
