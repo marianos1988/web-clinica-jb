@@ -25,7 +25,7 @@ const desplazarIconoWP = () =>{
   
   const observer = new IntersectionObserver(verificarVisibilidad)
 
-  observer.observe(document.querySelector(".group-items-footer")); 
+  observer.observe(document.querySelector(".group-sucursales-footer")); 
 }
 
 desplazarIconoWP();
@@ -114,6 +114,22 @@ const index = `
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
       </div>
     </div>
+
+    <div class="card-service">
+    <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+    <div class="card-content">
+      <h2>Entrenamiento Personalizado</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+    </div>
+  </div>
+
+  <div class="card-service">
+    <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+    <div class="card-content">
+      <h2>Entrenamiento Personalizado</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+    </div>
+  </div>
 </article>
 
 `;
@@ -188,39 +204,43 @@ const contacto = `
 `;
 
 const footer = `
-  <div class="group-items-footer">
-    <div class="item-footer">
-      <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
-      <div class="texto-direccion">
-        <p>Av. De Los Incas 5150</p>
-        <p>Ciudad Autonoma de Buenos Aires</p>
-        <p>C1427</p>
-      </div>
-    </div>
-    <div class="item-footer">
-      <div class="group-tel-email">
-        <div class="item-tel-email">
-          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
-          <p>011 1234-1234</p>
-        </div>
-        <div class="item-tel-email">
-          <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-          <p>sarasa@gmail.com</p>
+  <div class="group-sucursales-footer">
+    <div class="sucursal-footer">
+      <h3>Villa Urquiza - C.A.B.A.</h3>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+        <div class="texto-direccion">
+          <p>Av. De Los Incas 5150 - C1427</p>
         </div>
       </div>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+        <p>011 1234-1234</p>
+      </div>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+        <p>scaba@gmail.com</p>
+      </div>
     </div>
-    <div class="item-footer redes-sociales-footer">
-      <div class="group-redes-sociales-footer">
-        <div class="item-red-social">
-          <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
-          <p>Instagram</p>
+
+    <div class="sucursal-footer">
+      <h3>Pilar - Buenos Aires</h3>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+        <div class="texto-direccion">
+          <p>Av. Moreno 560 - C1520</p>
         </div>
-        <div class="item-red-social">
-          <div class="ico-footer"><a href="https://www.facebook.com/clinicajorgebombicino" target="_blank"><img src="./img/facebook-ico.png" alt="Facebook"></a></div>
-          <p>Facebook</p>
-        </div>
+      </div>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+        <p>011 4444-5555</p>
+      </div>
+      <div class="item-footer">
+        <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+        <p>pilar@gmail.com</p>
+      </div>
     </div>
-  </div>
+  </div> 
 `;
 
 btnInicio.addEventListener("click",()=>{
