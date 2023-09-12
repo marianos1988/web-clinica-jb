@@ -160,44 +160,49 @@ const contacto = `
     <div class="content">
       <h2>Contacto</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
+      <div class="item-instagram">
+        <h3>Podes encontrarnos en:</h3>
+        <div>
+          <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
+          <p>Instagram</p>
+        </div>
+      </div>
     </div>
-    <div class="container">
-      <div class="contactInfo">
-        <div class="box">
+    <div class="container-sucursales-contacto">
+      <div class="columna-sucursal">
+        <h3>Villa Urquiza - C.A.B.A.</h3>
+        <div class="item-sucursal-contacto">
           <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
-          <div class="text">
-            <h3>Domicilio</h3>
-            <p>Av. De Los Incas 5150<br>Ciudad Autonoma de Buenos Aires<br>C1427</p>
+          <div class="texto-direccion-contacto">
+            <p>Av. De Los Incas 5150 - C1427</p>
           </div>
         </div>
-        <div class="box">
-          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>
-          <div class="text">
-            <h3>Telefono</h3>
-            <p>000-000-0000</p>
-          </div>
+        <div class="item-sucursal-contacto">
+          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <p>011 1234-1234</p>
         </div>
-        <div class="box">
+        <div class="item-sucursal-contacto">
           <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-          <div class="text">
-            <h3>Email</h3>
-            <p>wrub7d78i0e@temporary-mail</p>
+          <p>scaba@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="columna-sucursal">
+        <h3>Pilar - Buenos Aires</h3>
+        <div class="item-sucursal-contacto">
+          <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="texto-direccion-contacto">
+            <p>Av. Moreno 560 - C1520</p>
           </div>
         </div>
-        <div class="box">
-          <div class="group-redes-sociales">
-            <h3>Redes Sociales</h3>
-            <div class="item-footer redes-sociales-footer">
-                <div class="item-red-social">
-                  <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
-                  <p>Instagram</p>
-                </div>
-                <div class="item-red-social">
-                  <div class="ico-footer"><a href="https://www.facebook.com/clinicajorgebombicino" target="_blank"><img src="./img/facebook-ico.png" alt="Facebook"></a></div>
-                  <p>Facebook</p>
-                </div>
-            </div>
-          </div>
+        <div class="item-sucursal-contacto">
+          <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <p>011 4444-5555</p>
+        </div>
+        <div class="item-sucursal-contacto">
+          <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
+          <p>pilar@gmail.com</p>
+        </div>
       </div>
     </div>
   </article>
