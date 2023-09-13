@@ -305,7 +305,7 @@ btnQuienesSomos.addEventListener("click",()=>{
   containerSection.innerHTML = quienesSomos;
   containerFooter.innerHTML = "";
   containerFooter.innerHTML = footer;
-  desplazarIconoWP();
+
 
 });
 
@@ -335,9 +335,9 @@ const mostrarServiciosResponsive = () => {
         '--innerTrack': '1fr',
         duration: 0.3,
       })
-      document.querySelector(`.${item.id}`).outerHTML = `
-      <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
-      `;
+      // document.querySelector(`.${item.id}`).outerHTML = `
+      // <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
+      // `;
     })
   
     item.addEventListener('mouseleave', () => {
@@ -349,7 +349,7 @@ const mostrarServiciosResponsive = () => {
         '--innerTrack': '0fr',
         duration: 0.3,
       })
-      document.querySelector(`.${item.id}`).pause();
+      // document.querySelector(`.${item.id}`).pause();
     })
   })
 }
