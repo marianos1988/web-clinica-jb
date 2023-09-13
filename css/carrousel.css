@@ -31,31 +31,31 @@
   background: url("../img/carrousel-1.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 .slider .slide:nth-child(2) {
   background: url("..//img/carrousel-2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 .slider .slide:nth-child(3) {
   background: url("../img/carrousel-3.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 .slider .slide:nth-child(4) {
   background: url("../img/carrousel-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 .slider .slide:nth-child(5) {
   background: url("..//img/carrousel-5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
 }
 .slider .slide:hover {
   width: 60%;
