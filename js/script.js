@@ -335,9 +335,26 @@ const mostrarServiciosResponsive = () => {
         '--innerTrack': '1fr',
         duration: 0.3,
       })
-      // document.querySelector(`.${item.id}`).outerHTML = `
-      // <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
-      // `;
+      if(item.id === `video-1`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dSHgRZGIznU?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        `;
+      }
+      else if(item.id === `video-2`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9sqbAadwIm0?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        `;
+      }
+      else if(item.id === `video-3`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vc41jG_84cQ?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        `;
+      }
+      else if(item.id === `video-4`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kymMZhvyTXo?autoplay=1&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        `;
+      }
     })
   
     item.addEventListener('mouseleave', () => {
@@ -349,7 +366,26 @@ const mostrarServiciosResponsive = () => {
         '--innerTrack': '0fr',
         duration: 0.3,
       })
-      // document.querySelector(`.${item.id}`).pause();
+      if(item.id === `video-1`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+  
+        `;
+      }
+      else if(item.id === `video-2`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+  
+        `;
+      }
+      else if(item.id === `video-3`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+  
+        `;
+      }
+      else if(item.id === `video-4`) {
+        document.querySelector(`.${item.id}`).innerHTML = `
+  
+        `;
+      }
     })
   })
 }
