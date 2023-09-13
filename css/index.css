@@ -1,7 +1,9 @@
+
 body {
-    margin: 0;
+
+    min-width: 456px;
     padding: 0;
-    min-width: 438px;
+    margin: 0;
     background-image: url("../img/textura.jpg");
     overflow-y: scroll;
     /*Thumb color and background color for firefox */
@@ -65,7 +67,8 @@ body {
 
 
 
-/*---- Scroll bar ---*/
+/* ---- Scroll bar ---*/
+
 .sub-div {
     max-height: 100%;
     overflow-y: scroll;
@@ -90,8 +93,9 @@ body {
     border-radius: 0.3em;
   }
   
-/*Fin scroll bar*/
+/*Fin scroll bar */
 .container-header {
+    width: 100%;
     display: flex;
     justify-content: left;
     background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
@@ -209,7 +213,7 @@ article, footer {
 @media (max-width: 461px) {
     .group-header div h3 {
         font-size: 25px;
-        transform: translate(-180px,-30px);
+        transform: translate(-140px,-30px);
 
 
     }
