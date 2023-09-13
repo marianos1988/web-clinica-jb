@@ -9,30 +9,6 @@ const btnWp = document.querySelector(".float-wp");
 var varWP = false;
 
 
-//mover icono whatsapp
-// const desplazarIconoWP = () =>{
-
-//   const verificarVisibilidad  = (entrada)=> {
-    
-//     if(entrada[0].isIntersecting){
-      
-//       document.querySelector(".float-wp").style.bottom = "160px";
-//       document.querySelector(".float-wp").style.transition= "bottom .5s ease";
-
-//     } else {
-
-//       document.querySelector(".float-wp").style.bottom = "60px";
-//       document.querySelector(".float-wp").style.transition= "bottom .5s ease";
-//     }
-//   }
-  
-//   const observer = new IntersectionObserver(verificarVisibilidad)
-
-//   observer.observe(document.querySelector(".group-sucursales-footer")); 
-// }
-
-// // desplazarIconoWP();
-
 btnConocenosMas.addEventListener("click",()=>{
 
   containerSection.innerHTML = ``;
@@ -64,49 +40,44 @@ btnWp.addEventListener("click",()=>{
 
 
 const index = `
-
-<article class="container-card-presentacion">
-  <div class="card">
-    <img src="./img/card-presentacion.jpg" />
-    <div>
-      <h2>Jorge Oscar Bombicino</h2>
-      <h3>Especialista atletas de alto rendimiento</h3>
-      <p>
-        Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
-      </p>
-      <button class="boton-conocenos-mas">Conocenos mas...</button>
-    </div>
-  </div>
-</article>
-<article class="container-galeria-servicios">
-  <div class="grid">
-    <div class="item" id="video-1">
-      <p>Pilar</p>
-      <div class="img-wrapper">
-        <video class="vid-servicios video-1" src="./videos/video-1.mp4"></video>
+  <article class="container-card-presentacion">
+    <div class="card">
+      <img src="./img/card-presentacion.jpg" />
+      <div>
+        <h2>Jorge Oscar Bombicino</h2>
+        <h3>Especialista atletas de alto rendimiento</h3>
+        <p>
+          Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
+        </p>
+        <button class="boton-conocenos-mas">Conocenos mas...</button>
       </div>
     </div>
-    <div class="item" id="video-2">
-      <p>Capital Federal</p>
-      <div class="img-wrapper">
-        <video class="vid-servicios video-2" src="./videos/video-1.mp4"></video>
+  </article>
+  <article class="container-galeria-servicios">
+    <div class="grid">
+      <div class="item" id="video-1">
+        <p>Pilar</p>
+        <div class="img-wrapper video-1">
+        </div>
+      </div>
+      <div class="item" id="video-2">
+        <p>Capital Federal</p>
+        <div class="img-wrapper video-2">
+        </div>
+      </div>
+      <div class="item" id="video-3">
+        <p>Consultas Medicas</p>
+        <div class="img-wrapper video-3">
+        </div>
+      </div>
+      <div class="item" id="video-4">
+        <p>Entrenamiento Personalizado</p>
+        <div class="img-wrapper video-4">
+        </div>
       </div>
     </div>
-    <div class="item" id="video-3">
-      <p>Consultas Medicas</p>
-      <div class="img-wrapper">
-        <video class="vid-servicios video-3" src="./videos/video-1.mp4"></video>
-      </div>
-    </div>
-    <div class="item" id="video-4">
-      <p>Entrenamiento Personalizado</p>
-      <div class="img-wrapper">
-        <video class="vid-servicios video-4" src="./videos/video-1.mp4"></video>
-      </div>
-    </div>
-  </div>
-</article>
-<article class="container-cards-servicios">
+  </article>
+  <article class="container-cards-servicios">
     <div class="card-service">
       <div class="card-img-shadow"><img src="./img/servicios-kinesiologia.png" alt="wanda"></div>
       <div class="card-content">
@@ -114,7 +85,7 @@ const index = `
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
       </div>
     </div>
-  
+
     <div class="card-service">
       <div class="card-img-shadow"><img src="./img/servicios-nutricion.png" alt="wanda"></div>
       <div class="card-content">
@@ -140,21 +111,21 @@ const index = `
     </div>
 
     <div class="card-service">
-    <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
-    <div class="card-content">
-      <h2>Entrenamiento Personalizado</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Entrenamiento Personalizado</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
     </div>
-  </div>
 
-  <div class="card-service">
-    <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
-    <div class="card-content">
-      <h2>Entrenamiento Personalizado</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+    <div class="card-service">
+      <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+      <div class="card-content">
+        <h2>Entrenamiento Personalizado</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?</p>
+      </div>
     </div>
-  </div>
-</article>
+  </article>
 
 `;
 

@@ -119,6 +119,12 @@
     box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
 }
 
+.ico-contacto img:hover {
+    background-color: rgb(43, 163, 133);
+    transition: background-color 1s;
+    cursor: pointer;
+}
+
 @media (max-width: 790px) {
 	.container-sucursales-contacto {
 		flex-direction: column;
