@@ -197,6 +197,14 @@ article, footer {
 
     .grid-header {
         display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    .grid-header .group-text-header h3 {
+
+        width: 300px;
+
     }
 
 
