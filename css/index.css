@@ -217,7 +217,7 @@ article, footer {
 
     .float-wp .group-wp-sucursal a .item-sucursal-wp {
         font-size: 14px;
-        margin: 5px -25px 5px 0;
+        margin: 5px -10px 5px 0;
 
     }
 
@@ -227,6 +227,26 @@ article, footer {
     .grid-header .group-text-header h3 {
 
         width: 300px;
+
+    }
+    .float-wp {
+
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+
+    }
+
+    .fa-whatsapp {
+
+        font-size: 60px;
+        bottom: 30px;
+    
+    }
+
+    .float-wp .group-wp-sucursal a .item-sucursal-wp {
+        font-size: 16px;
+        margin: 5px -10px 5px 0;
 
     }
 }
@@ -245,6 +265,27 @@ article, footer {
     .grid-header .group-text-header h3 {
         transform: translate(-180px,-20px);
         width: 350px;
+
+    }
+
+    .float-wp {
+
+        width: 60px;
+        height: 60px;
+        background-color: #25d366;
+
+    }
+
+    .fa-whatsapp {
+
+        font-size: 60px;
+        bottom: 30px;
+    
+    }
+
+    .float-wp .group-wp-sucursal a .item-sucursal-wp {
+        font-size: 16px;
+        margin: 5px -10px 5px 0;
 
     }
 
