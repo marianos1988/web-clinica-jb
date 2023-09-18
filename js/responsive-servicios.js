@@ -2,8 +2,6 @@ const grid = document.querySelector('.grid')
 const items = document.querySelectorAll('.item')
 
 
-
-
 items.forEach((item) => {
 	item.addEventListener('mouseenter', () => {
 		gsap.to(grid, {

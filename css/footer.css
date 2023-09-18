@@ -83,3 +83,15 @@
     }
 }
 
+@media (min-width:360px) and (max-width:390px) {
+
+    .item-footer .ico-footer {
+        margin-left: 10px;
+    }
+
+    .container-quienes-somos h2 {
+        padding: 5px;
+    }
+
+}
+
