@@ -66,12 +66,12 @@ const index = `
         </div>
       </div>
       <div class="item" id="video-3">
-        <p>Consultas Medicas</p>
+        <p>Entrenamiento grupal</p>
         <div class="img-wrapper video-3">
         </div>
       </div>
       <div class="item" id="video-4">
-        <p>Entrenamiento Personalizado</p>
+        <p>Trabajo en equipo</p>
         <div class="img-wrapper video-4">
         </div>
       </div>
@@ -308,22 +308,22 @@ const mostrarServiciosResponsive = () => {
       })
       if(item.id === `video-1`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dSHgRZGIznU?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://drive.google.com/file/d/1_pBj1tr9cuFW2jgLmIzRwa73nQoLeIYx/preview" width="100%" height="100%" allow="autoplay"></iframe>
         `;
       }
       else if(item.id === `video-2`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9sqbAadwIm0?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://drive.google.com/file/d/1Rm3VRL-nv3PdWFzhM0W-NDa7xm1GX4do/preview" width="100%" height="100%" allow="autoplay"></iframe>
         `;
       }
       else if(item.id === `video-3`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Vc41jG_84cQ?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://drive.google.com/file/d/1SZRJh5ER9nzj2-oKoxy2ktEWOR4iYP8C/preview" width="100%" height="100%" allow="autoplay"></iframe>
         `;
       }
       else if(item.id === `video-4`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kymMZhvyTXo?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe src="https://drive.google.com/file/d/1c0gHfgJUKUNfskdIRvMrBATQiPdx1sP_/preview" width="100%" height="100%" allow="autoplay"></iframe>
         `;
       }
     })
