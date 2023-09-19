@@ -47,6 +47,7 @@ svg {
   height: 58px;
   position: absolute;
   width: 58px;
+  z-index: 9999;
 }
 .plates {
   display: flex;
@@ -60,9 +61,10 @@ svg {
   width: 58px;
 }
 .burger {
-  filter: url(#gooeyness);
+  cursor: pointer;
 }
 .x {
+  cursor: pointer;
   transform: scale(0);
   transition: transform 400ms;
 }
@@ -115,6 +117,7 @@ svg {
 @media (max-width: 600px) {
     .toggle-button {
         display: flex;
+        z-index: 9999;
     }
     .navbar-links {
 

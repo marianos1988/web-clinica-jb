@@ -8,57 +8,29 @@
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
+	font-family: 'Lato', sans-serif;
 
 }
+
+
 
 .container-contact .content 
 {	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 95%;
+	padding: 10px 50px 10px 50px;
 	margin-top: 25px;
 	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
 	text-align: center;
 	border-radius: 30px;
 }
 
-.container-contact .content 
-{	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 95%;
-	margin-top: 25px;
-	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
-	text-align: center;
-	border-radius: 30px;
-}
-.container-contact .content h2 
-{	
-	font-family: "Jost", sans-serif;
-	width: 200px;
-	color: #fff;
-	color: rgba(17,91,92,1);
-    background-color: white;
-    padding: 5px;
-    border-radius: 20px;
-    font-size: 40px;
-    -webkit-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
-	box-shadow: -9px 16px 15px 0px rgba(0,0,0,0.75);
-}
-.container-contact .content p 
-{
-	color: #fff;
-	font-size: 1.2em;
-	font-weight: 500;
-	font-family: 'Signika Negative', sans-serif;
-}
+
 
 .item-instagram {
 	display: flex;
 	color: #fff;
 	flex-direction: column;
-	font-family: 'Signika Negative', sans-serif;
 	padding-bottom: 10px;
 
 }
@@ -83,18 +55,39 @@
 } 
  
 .columna-sucursal {
-	font-family: 'Signika Negative', sans-serif;
+	display: grid;
+	justify-content: center;
     color: white;
     font-size: 20px;
 	width: 45%;
 	border-radius: 30px;
 	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
 	min-width: 342px;
+	padding-bottom: 25px;
+
 }
 
 .columna-sucursal h3 {
 	text-align: center;
 
+}
+
+.columna-sucursal img {
+	
+	width: 300px;
+	height: 300px;
+	object-fit: cover;
+	border-radius: 10%;
+	-webkit-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
+    box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
+	margin-bottom: 20px;
+}
+.columna-sucursal .img-suc-incas {
+	transform: translateX(40px);
+}
+.columna-sucursal .img-suc-pilar {
+	transform: translateX(10px);
 }
 
 .columna-sucursal .item-sucursal-contacto {
@@ -117,6 +110,7 @@
     -webkit-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
+	
 }
 
 .ico-contacto img:hover {
@@ -124,7 +118,17 @@
     transition: background-color 1s;
     cursor: pointer;
 }
+@media (max-width: 852px) {
+	.item-sucursal-contacto .texto-direccion-contacto {
+		height: 86px;
+		width: 270px;
+		transform: translateY(8px);
+	}
+	.columna-sucursal .img-suc-pilar {
+		transform: translateX(35px);
+	}
 
+}
 @media (max-width: 790px) {
 	.container-sucursales-contacto {
 		flex-direction: column;

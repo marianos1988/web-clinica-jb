@@ -152,20 +152,10 @@ const quienesSomos = `
 
 const contacto = `
   <article class="container-contact">
-    <div class="content">
-      <h2>Contacto</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem numquam id reprehenderit, sunt laudantium enim possimus repellat debitis et quis!</p>
-      <div class="item-instagram">
-        <h3>Podes encontrarnos en:</h3>
-        <div>
-          <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
-          <p>Instagram</p>
-        </div>
-      </div>
-    </div>
     <div class="container-sucursales-contacto">
       <div class="columna-sucursal">
         <h3>Villa Urquiza - C.A.B.A.</h3>
+        <img class="img-suc-incas" src="./img/sede-incas.jpg" alt="">
         <div class="item-sucursal-contacto">
           <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
           <div class="texto-direccion-contacto">
@@ -184,6 +174,7 @@ const contacto = `
 
       <div class="columna-sucursal">
         <h3>Pilar - Buenos Aires</h3>
+        <img class="img-suc-pilar" src="./img/sede-pilar.jpg" alt="">
         <div class="item-sucursal-contacto">
           <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
           <div class="texto-direccion-contacto">
@@ -197,6 +188,15 @@ const contacto = `
         <div class="item-sucursal-contacto">
           <div class="ico-contacto"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
           <p>pilar@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="item-instagram">
+        <h3>Podes encontrarnos en:</h3>
+        <div>
+          <div class="ico-footer"><a href="https://www.instagram.com/terapia_fisica_bombicino/"  target="_blank"><img src="./img/instagram-ico.png" alt="Instagram"></a></div>
+          <p>Instagram</p>
         </div>
       </div>
     </div>

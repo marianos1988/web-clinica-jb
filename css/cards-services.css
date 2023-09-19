@@ -8,7 +8,7 @@
   color: rgba(17,91,92,1);
   background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
   box-sizing: border-box;
-  font-family: "Jost", sans-serif;
+  font-family: 'Lato', sans-serif;
   justify-content: center;
   align-items: center;
   gap: 40px;

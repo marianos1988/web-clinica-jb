@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap");
+
 .container-quienes-somos {
     margin: 2%;
     display: flex;
@@ -8,11 +8,11 @@
     width: 95%;
     border-radius: 30px;
     background: linear-gradient(rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
+    font-family: 'Lato', sans-serif;
 }
 
 .container-quienes-somos h2 {
     color: rgba(17,91,92,1);
-    font-family: "Jost", sans-serif;
     background-color: white;
     padding: 5px;
     border-radius: 20px;
@@ -27,6 +27,6 @@
     text-align: justify;
     color: white;
     padding: 10px;
-    font-family: 'Signika Negative', sans-serif;
+
 }
 
