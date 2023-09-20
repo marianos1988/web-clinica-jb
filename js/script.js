@@ -308,22 +308,22 @@ const mostrarServiciosResponsive = () => {
       })
       if(item.id === `video-1`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
+        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" width=100% heigth=100% autoplay controls></video>
   `;
       }
       else if(item.id === `video-2`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
+        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" width=100% heigth=100% autoplay controls></video>
   `;
       }
       else if(item.id === `video-3`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
+        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" width=100% heigth=100% autoplay controls></video>
   `;
       }
       else if(item.id === `video-4`) {
         document.querySelector(`.${item.id}`).innerHTML = `
-        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" autoplay></video>
+        <video class="vid-servicios ${item.id}" src="./videos/${item.id}.mp4" width=100% heigth=100% autoplay controls></video>
   `;
       }
     })
