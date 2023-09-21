@@ -53,28 +53,47 @@ const index = `
       </div>
     </div>
   </article>
-  <article class="container-galeria-servicios">
-    <div class="grid">
-      <div class="item" id="video-1">
-        <p>Pilar</p>
-        <div class="img-wrapper video-1">
+  <article class="container-video-servicios">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one">
+          <video id="video-1">
+            <source src="./videos/video-1.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Sucursal Pilar</h2>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--two">
+          <video id="video-2">
+            <source src="./videos/video-2.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Sucursal C.A.B.A.</h2>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--three">
+          <video id="video-3">
+            <source src="./videos/video-3.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Entrenamiento Grupal</h2>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--four">
+          <video id="video-4">
+            <source src="./videos/video-4.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Trabajo en equipo</h2>
+          </div>
         </div>
       </div>
-      <div class="item" id="video-2">
-        <p>Capital Federal</p>
-        <div class="img-wrapper video-2">
-        </div>
-      </div>
-      <div class="item" id="video-3">
-        <p>Entrenamiento grupal</p>
-        <div class="img-wrapper video-3">
-        </div>
-      </div>
-      <div class="item" id="video-4">
-        <p>Trabajo en equipo</p>
-        <div class="img-wrapper video-4">
-        </div>
-      </div>
+      <div class="swiper-pagination"></div>
     </div>
   </article>
   <article class="container-cards-servicios">
@@ -265,8 +284,7 @@ btnInicio.addEventListener("click",()=>{
   
   });
 
-  //Muestra fotos del responsive servicios
-  mostrarServiciosResponsive();
+videosParaMostrar();
 
 
 });
@@ -291,4 +309,60 @@ btnContacto.addEventListener("click",()=>{
 });
 
 
+function videosParaMostrar() {
 
+  var swiper = new Swiper(".swiper", {
+
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 2,
+    speed: 600,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true,
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: false,
+    },
+  });
+  
+  
+  document.querySelector(".swiper-slide--one").addEventListener("mouseover",()=>{
+    reproducirVideo("video-1");
+  })
+  
+  document.querySelector(".swiper-slide--one").addEventListener("mouseleave",()=>{
+    detenerVideo("video-1");
+  })
+  
+  document.querySelector(".swiper-slide--two").addEventListener("mouseover",()=>{
+    reproducirVideo("video-2");
+  })
+    
+  document.querySelector(".swiper-slide--two").addEventListener("mouseleave",()=>{
+    detenerVideo("video-2");
+  })
+  
+  document.querySelector(".swiper-slide--three").addEventListener("mouseover",()=>{
+    reproducirVideo("video-3");
+  })
+    
+  document.querySelector(".swiper-slide--three").addEventListener("mouseleave",()=>{
+    detenerVideo("video-3");
+  })
+  
+  document.querySelector(".swiper-slide--four").addEventListener("mouseover",()=>{
+    reproducirVideo("video-4");
+  })
+    
+  document.querySelector(".swiper-slide--four").addEventListener("mouseleave",()=>{
+    detenerVideo("video-4");
+  })
+  
+}
