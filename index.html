@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/index.css">
   <link rel="stylesheet" href="css/card-presentacion.css">
-  <link rel="stylesheet" href="./css/responsive-servicios.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/presentacion-videos.css" />
   <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/cards-services.css">
   <link rel="stylesheet" href="./css/carrousel.css">
@@ -73,29 +74,47 @@
         </div>
       </div>
     </article>
-    <article class="container-galeria-servicios">
-      <div class="grid">
-        <div class="item" id="video-1">
-          <p>Pilar</p>
-          <div class="img-wrapper video-1">
-
+    <article class="container-video-servicios">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <video controls>
+              <source src="./videos/video-1.mp4" type="video/mp4">
+              Tu navegador no admite la reproducción de videos.
+            </video>
+            <div>
+              <h2>Sucursal Pilar</h2>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <video controls>
+              <source src="./videos/video-2.mp4" type="video/mp4">
+              Tu navegador no admite la reproducción de videos.
+            </video>
+            <div>
+              <h2>Sucursal C.A.B.A.</h2>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--three">
+            <video controls>
+              <source src="./videos/video-3.mp4" type="video/mp4">
+              Tu navegador no admite la reproducción de videos.
+            </video>
+            <div>
+              <h2>Entrenamiento Grupal</h2>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--four">
+            <video controls>
+              <source src="./videos/video-4.mp4" type="video/mp4">
+              Tu navegador no admite la reproducción de videos.
+            </video>
+            <div>
+              <h2>Trabajo en equipo</h2>
+            </div>
           </div>
         </div>
-        <div class="item" id="video-2">
-          <p>Capital Federal</p>
-          <div class="img-wrapper video-2">
-          </div>
-        </div>
-        <div class="item" id="video-3">
-          <p>Entrenamiento grupal</p>
-          <div class="img-wrapper video-3">
-          </div>
-        </div>
-        <div class="item" id="video-4">
-          <p>Trabajo en equipo</p>
-          <div class="img-wrapper video-4">
-          </div>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </article>
     <article class="container-cards-servicios">
@@ -189,8 +208,9 @@
   </footer> 
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
-  <script src="./js/responsive-servicios.js"></script>
+  <script src="./js/presentacion-videos.js"></script>
   <script src="./js/script.js"></script>
   <!--
     Pagina Web Diseñada y construida por Mariano Sy
