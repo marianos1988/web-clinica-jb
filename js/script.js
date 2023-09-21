@@ -56,7 +56,7 @@ const index = `
   <article class="container-video-servicios">
     <div class="swiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide--one">
+        <div class="swiper-slide swiper-slide--one" id="slide-1">
           <video id="video-1">
             <source src="./videos/video-1.mp4" type="video/mp4">
             Tu navegador no admite la reproducción de videos.
@@ -65,7 +65,7 @@ const index = `
             <h2>Sucursal Pilar</h2>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--two">
+        <div class="swiper-slide swiper-slide--two" id="slide-2">
           <video id="video-2">
             <source src="./videos/video-2.mp4" type="video/mp4">
             Tu navegador no admite la reproducción de videos.
@@ -74,7 +74,7 @@ const index = `
             <h2>Sucursal C.A.B.A.</h2>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--three">
+        <div class="swiper-slide swiper-slide--three" id="slide-3">
           <video id="video-3">
             <source src="./videos/video-3.mp4" type="video/mp4">
             Tu navegador no admite la reproducción de videos.
@@ -83,7 +83,7 @@ const index = `
             <h2>Entrenamiento Grupal</h2>
           </div>
         </div>
-        <div class="swiper-slide swiper-slide--four">
+        <div class="swiper-slide swiper-slide--four" id="slide-4">
           <video id="video-4">
             <source src="./videos/video-4.mp4" type="video/mp4">
             Tu navegador no admite la reproducción de videos.
@@ -286,7 +286,6 @@ btnInicio.addEventListener("click",()=>{
 
 videosParaMostrar();
 
-
 });
 
 btnQuienesSomos.addEventListener("click",()=>{
@@ -308,8 +307,37 @@ btnContacto.addEventListener("click",()=>{
 
 });
 
+// Presentacion Videos
+
+
+
+
+// Reproducir el video
+function reproducirVideo(video) {
+  document.querySelector(`#${video}`).play();
+}
+
+// Pausar el video
+function pausarVideo(video) {
+  document.querySelector(`#${video}`).pause();
+}
+
+// Detener el video y volver al inicio
+function detenerVideo(video) {
+  document.querySelector(`#${video}`).pause();
+  document.querySelector(`#${video}`).currentTime = 0;
+}
 
 function videosParaMostrar() {
+
+  const slide1 = document.getElementById("slide-1");
+  const slide2 = document.getElementById("slide-2");
+  const slide3 = document.getElementById("slide-3");
+  const slide4 = document.getElementById("slide-4");
+  var estadoVideo1 = false;
+  var estadoVideo2 = false;
+  var estadoVideo3 = false;
+  var estadoVideo4 = false;
 
   var swiper = new Swiper(".swiper", {
 
@@ -333,36 +361,53 @@ function videosParaMostrar() {
   });
   
   
-  document.querySelector(".swiper-slide--one").addEventListener("mouseover",()=>{
-    reproducirVideo("video-1");
+  slide1.addEventListener("click",()=>{
+    if(estadoVideo1) {
+      detenerVideo("video-1");
+      estadoVideo1 = false;
+    } 
+    else {
+      reproducirVideo("video-1");
+      estadoVideo1 = true;
+    } 
   })
   
-  document.querySelector(".swiper-slide--one").addEventListener("mouseleave",()=>{
-    detenerVideo("video-1");
-  })
   
-  document.querySelector(".swiper-slide--two").addEventListener("mouseover",()=>{
-    reproducirVideo("video-2");
+  slide2.addEventListener("click",()=>{
+    if(estadoVideo2) {
+      detenerVideo("video-2");
+      estadoVideo2 = false;
+    } 
+    else {
+      reproducirVideo("video-2");
+      estadoVideo2 = true;
+    } 
+  });
+  
+  slide3.addEventListener("click",()=>{
+    if(estadoVideo3) {
+      detenerVideo("video-3");
+      estadoVideo3 = false;
+    } 
+    else {
+      reproducirVideo("video-3");
+      estadoVideo3 = true;
+    } 
   })
     
-  document.querySelector(".swiper-slide--two").addEventListener("mouseleave",()=>{
-    detenerVideo("video-2");
-  })
   
-  document.querySelector(".swiper-slide--three").addEventListener("mouseover",()=>{
-    reproducirVideo("video-3");
+  slide4.addEventListener("click",()=>{
+    if(estadoVideo4) {
+      detenerVideo("video-4");
+      estadoVideo4 = false;
+    } 
+    else {
+      reproducirVideo("video-4");
+      estadoVideo4 = true;
+    } 
   })
-    
-  document.querySelector(".swiper-slide--three").addEventListener("mouseleave",()=>{
-    detenerVideo("video-3");
-  })
-  
-  document.querySelector(".swiper-slide--four").addEventListener("mouseover",()=>{
-    reproducirVideo("video-4");
-  })
-    
-  document.querySelector(".swiper-slide--four").addEventListener("mouseleave",()=>{
-    detenerVideo("video-4");
-  })
+
   
 }
+
+videosParaMostrar();
