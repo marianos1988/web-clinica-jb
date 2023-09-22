@@ -40,61 +40,85 @@ btnWp.addEventListener("click",()=>{
 
 
 const index = `
-  <article class="container-card-presentacion">
-    <div class="card">
-      <img src="./img/card-presentacion.jpg" />
-      <div>
-        <h2>Jorge Oscar Bombicino</h2>
-        <h3>Especialista atletas de alto rendimiento</h3>
-        <p>
-          Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
-        </p>
-        <button class="boton-conocenos-mas">Conocenos mas...</button>
-      </div>
+<article class="container-card-presentacion">
+  <div class="card">
+    <img src="./img/card-presentacion.jpg" />
+    <div>
+      <h2>Jorge Oscar Bombicino</h2>
+      <h3>Especialista atletas de alto rendimiento</h3>
+      <p>
+        Nuestra clinica se especializa a tratar a pacientes deportistas bla bla bla
+      </p>
+      <button class="boton-conocenos-mas">Conocenos mas...</button>
     </div>
+  </div>
   </article>
   <article class="container-video-servicios">
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide--one" id="slide-1">
-          <video id="video-1">
-            <source src="./videos/video-1.mp4" type="video/mp4">
-            Tu navegador no admite la reproducción de videos.
-          </video>
-          <div>
-            <h2>Sucursal Pilar</h2>
-          </div>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide swiper-slide--one" id="slide-1">
+        <div class="btn-play-background">
+          <img id="btn-slide-1" src="./img/ico-play.png" alt="Play Video">
         </div>
-        <div class="swiper-slide swiper-slide--two" id="slide-2">
-          <video id="video-2">
-            <source src="./videos/video-2.mp4" type="video/mp4">
-            Tu navegador no admite la reproducción de videos.
-          </video>
-          <div>
-            <h2>Sucursal C.A.B.A.</h2>
-          </div>
+        <div class="btn-pause-background">
+          <img id="btn-pause-1" src="./img/ico-pausa.png" alt="Pausar Video">
         </div>
-        <div class="swiper-slide swiper-slide--three" id="slide-3">
-          <video id="video-3">
-            <source src="./videos/video-3.mp4" type="video/mp4">
-            Tu navegador no admite la reproducción de videos.
-          </video>
-          <div>
-            <h2>Entrenamiento Grupal</h2>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide--four" id="slide-4">
-          <video id="video-4">
-            <source src="./videos/video-4.mp4" type="video/mp4">
-            Tu navegador no admite la reproducción de videos.
-          </video>
-          <div>
-            <h2>Trabajo en equipo</h2>
-          </div>
+        <video id="video-1" fullscreen>
+          <source src="./videos/video-1.mp4" type="video/mp4">
+          Tu navegador no admite la reproducción de videos.
+        </video>
+        <div>
+          <h2>Sucursal Pilar</h2>
         </div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="swiper-slide swiper-slide--two" id="slide-2">
+        <div class="btn-play-background">
+          <img id="btn-slide-2" src="./img/ico-play.png" alt="Play Video">
+        </div>
+        <div class="btn-pause-background">
+          <img id="btn-pause-2" src="./img/ico-pausa.png" alt="Pausar Video">
+        </div>
+        <video id="video-2">
+          <source src="./videos/video-2.mp4" type="video/mp4">
+          Tu navegador no admite la reproducción de videos.
+        </video>
+        <div>
+          <h2>Sucursal C.A.B.A.</h2>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--three" id="slide-3">
+        <div class="btn-play-background">
+          <img id="btn-slide-3" src="./img/ico-play.png" alt="Play Video">
+        </div>
+        <div class="btn-pause-background">
+          <img id="btn-pause-3" src="./img/ico-pausa.png" alt="Pausar Video">
+        </div>
+        <video id="video-3">
+          <source src="./videos/video-3.mp4" type="video/mp4">
+          Tu navegador no admite la reproducción de videos.
+        </video>
+        <div>
+          <h2>Entrenamiento Grupal</h2>
+        </div>
+      </div>
+      <div class="swiper-slide swiper-slide--four" id="slide-4">
+        <div class="btn-play-background">
+          <img id="btn-slide-4" src="./img/ico-play.png" alt="Play Video">
+        </div>
+        <div class="btn-pause-background">
+          <img id="btn-pause-4" src="./img/ico-pausa.png" alt="Pausar Video">
+        </div>
+        <video id="video-4">
+          <source src="./videos/video-4.mp4" type="video/mp4">
+          Tu navegador no admite la reproducción de videos.
+        </video>
+        <div>
+          <h2>Trabajo en equipo</h2>
+        </div>
+      </div>
     </div>
+    <div class="swiper-pagination"></div>
+  </div>
   </article>
   <article class="container-cards-servicios">
     <div class="card-service">
