@@ -328,16 +328,19 @@ function detenerVideo(video) {
   document.querySelector(`#${video}`).currentTime = 0;
 }
 
+
+
 function videosParaMostrar() {
 
-  const slide1 = document.getElementById("slide-1");
-  const slide2 = document.getElementById("slide-2");
-  const slide3 = document.getElementById("slide-3");
-  const slide4 = document.getElementById("slide-4");
-  var estadoVideo1 = false;
-  var estadoVideo2 = false;
-  var estadoVideo3 = false;
-  var estadoVideo4 = false;
+  const slidePlay1 = document.getElementById("btn-slide-1");
+  const slidePlay2 = document.getElementById("btn-slide-2");
+  const slidePlay3 = document.getElementById("btn-slide-3");
+  const slidePlay4 = document.getElementById("btn-slide-4");
+  const slidePause1 = document.getElementById("btn-pause-1");
+  const slidePause2 = document.getElementById("btn-pause-2");
+  const slidePause3 = document.getElementById("btn-pause-3");
+  const slidePause4 = document.getElementById("btn-pause-4");
+
 
   var swiper = new Swiper(".swiper", {
 
@@ -361,51 +364,96 @@ function videosParaMostrar() {
   });
   
   
-  slide1.addEventListener("click",()=>{
-    if(estadoVideo1) {
-      detenerVideo("video-1");
-      estadoVideo1 = false;
-    } 
-    else {
+  slidePlay1.addEventListener("click",()=>{
       reproducirVideo("video-1");
-      estadoVideo1 = true;
-    } 
-  })
-  
-  
-  slide2.addEventListener("click",()=>{
-    if(estadoVideo2) {
       detenerVideo("video-2");
-      estadoVideo2 = false;
-    } 
-    else {
-      reproducirVideo("video-2");
-      estadoVideo2 = true;
-    } 
+      slidePause2.style.display="none";
+      slidePlay2.style.display="inherit";
+      detenerVideo("video-3");
+      slidePlay3.style.display="inherit";
+      slidePause3.style.display="none";
+      detenerVideo("video-4");
+      slidePause4.style.display="none";
+      slidePlay4.style.display="inherit";
+      slidePause2.style.display="none";
+      slidePause1.style.display="inherit";
+      slidePlay1.style.display="none";
+
   });
   
-  slide3.addEventListener("click",()=>{
-    if(estadoVideo3) {
+  slidePause1.addEventListener("click",()=>{
+    pausarVideo("video-1");
+    slidePlay1.style.display="inherit";
+    slidePause1.style.display="none";
+  });
+  
+  
+  slidePlay2.addEventListener("click",()=>{
+
+      reproducirVideo("video-2");
+      detenerVideo("video-1");
+      slidePause1.style.display="none";
+      slidePlay1.style.display="inherit";
       detenerVideo("video-3");
-      estadoVideo3 = false;
-    } 
-    else {
+      slidePause3.style.display="none";
+      slidePlay3.style.display="inherit";
+      detenerVideo("video-4");
+      slidePause4.style.display="none";
+      slidePlay4.style.display="inherit";
+      slidePause2.style.display="inherit";
+      slidePlay2.style.display="none";
+  });
+
+  slidePause2.addEventListener("click",()=>{
+    pausarVideo("video-2");
+    slidePlay2.style.display="inherit";
+    slidePause2.style.display="none";
+  });
+  
+  slidePlay3.addEventListener("click",()=>{
+
       reproducirVideo("video-3");
-      estadoVideo3 = true;
-    } 
+      detenerVideo("video-1");
+      slidePause1.style.display="none";
+      slidePlay1.style.display="inherit";
+      detenerVideo("video-2");
+      slidePause2.style.display="none";
+      slidePlay2.style.display="inherit";
+      detenerVideo("video-4");
+      slidePause4.style.display="none";
+      slidePlay4.style.display="inherit";
+      slidePause3.style.display="inherit";
+      slidePlay3.style.display="none";
   })
+
+  slidePause3.addEventListener("click",()=>{
+    pausarVideo("video-3");
+    slidePlay3.style.display="inherit";
+    slidePause3.style.display="none";
+  });
     
   
-  slide4.addEventListener("click",()=>{
-    if(estadoVideo4) {
-      detenerVideo("video-4");
-      estadoVideo4 = false;
-    } 
-    else {
+  slidePlay4.addEventListener("click",()=>{
+
       reproducirVideo("video-4");
-      estadoVideo4 = true;
-    } 
+      detenerVideo("video-1");
+      slidePause1.style.display="none";
+      slidePlay1.style.display="inherit";
+      detenerVideo("video-2");
+      slidePause2.style.display="none";
+      slidePlay2.style.display="inherit";
+      detenerVideo("video-3");
+      slidePause3.style.display="none";
+      slidePlay3.style.display="inherit";
+      slidePause4.style.display="inherit";
+      slidePlay4.style.display="none";
   })
+
+  slidePause4.addEventListener("click",()=>{
+    pausarVideo("video-4");
+    slidePlay4.style.display="inherit";
+    slidePause4.style.display="none";
+  });
 
   
 }

@@ -26,6 +26,7 @@
 }
 
 .swiper-slide {
+  position: relative;
   height: 500px;
   width: 100%;
   display: flex;
@@ -41,6 +42,54 @@
   width: 85%;
   height: 85%;
   border-radius: 25px;
+}
+
+
+.swiper-slide .btn-play-background img {
+  opacity: .7;
+  left: 42%;
+  top: 33%;
+  z-index: 999;
+  background-color: #fff;
+  object-fit: contain;
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  animation: aparecer .5s ease-in;
+
+}
+.swiper-slide .btn-play-background img:hover {
+
+  transition: opacity .5s;
+  cursor: pointer;
+  opacity: 1;
+}
+#btn-pause-1, #btn-pause-2, #btn-pause-3, #btn-pause-4 {
+  display: none;
+}
+#btn-slide-1, #btn-slide-2, #btn-slide-3, #btn-slide-4 {
+  display: inherit;
+}
+.btn-pause-background img {
+  opacity: .7;
+  left: -47%;
+  top: 0%;
+  z-index: 9999;
+  background-color: #fff;
+  object-fit: contain;
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  animation: aparecer .5s ease-in;
+}
+.btn-pause-background img:hover {
+
+  transition: opacity .5s;
+  cursor: pointer;
+  opacity: 1;
+
 }
 
 .swiper-slide h2 {
@@ -99,5 +148,82 @@
   .swiper-slide div h2 {
     font-size: 1rem;
     text-align: center;
+    max-height: 23px;
+  }
+
+  .swiper-slide .btn-play-background img {
+    left: 35%;
+    width: 60px;
+    height: 60px;
+    
+  }
+
+  .swiper-slide .btn-pause-background img {
+    left: -40%;
+    top: 3%;
+    width: 40px;
+    height: 40px
+    
+  }
+  
+}
+
+@media (min-width: 431px) and (max-width: 449px) {
+
+  .swiper-slide div h2 {
+    max-height: 32px;
+  }
+  .swiper-slide .btn-play-background img {
+    left: 35%;
+    width: 60px;
+    height: 60px;
+  }
+
+  .swiper-slide .btn-pause-background img {
+    left: -46%;
+    top: 2%;
+    width: 45px;
+    height: 45px;
+    
+  }
+}
+@media (min-width: 450px) and (max-width: 600px) {
+
+  .swiper-slide div h2 {
+    max-height: 32px;
+  }
+  .swiper-slide .btn-play-background img {
+    left: 38%;
+    width: 70px;
+    height: 70px;
+    
+  }
+
+  .swiper-slide .btn-pause-background img {
+    left: -46%;
+    top: 2%;
+    width: 55px;
+    height: 55px;
+    
+  }
+}
+
+@media (min-width:900px) {
+  .swiper-slide .btn-pause-background img {
+    left: -48%;
+    top: 2%;
+    width: 55px;
+    height: 55px;
+    
+  }
+}
+
+@keyframes aparecer {
+    
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
   }
 }
