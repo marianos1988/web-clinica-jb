@@ -5,8 +5,10 @@ const section = document.querySelector(".container-section");
 const containerFooter = document.querySelector(".container-footer");
 const containerSection = document.querySelector(".container-section");
 const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+const btnReloadVideos = document.querySelector("#btn-reload-videos");
 const btnWp = document.querySelector(".float-wp");
 var varWP = false;
+
 
 
 btnConocenosMas.addEventListener("click",()=>{
@@ -17,6 +19,9 @@ btnConocenosMas.addEventListener("click",()=>{
   containerFooter.innerHTML = footer;
 
 });
+
+
+
 
 function abrirCerrarWP() {
 
@@ -53,73 +58,91 @@ const index = `
       </div>
     </div>
   </article>
+  <div class="container-reload">
+    <p>Actualizar Videos</p>
+    <div class="background-ico-reload" id="btn-reload-videos">
+      <img src="./img/ico-reload.png" alt="Actualizar Videos">
+    </div>
+  </div>
   <article class="container-video-servicios">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide swiper-slide--one" id="slide-1">
-            <div class="btn-play-background">
-              <img id="btn-slide-1" src="./img/ico-play.png" alt="Play Video">
-            </div>
-            <div class="btn-pause-background">
-              <img id="btn-pause-1" src="./img/ico-pausa.png" alt="Pausar Video">
-            </div>
-            <video id="video-1" disablefullscreen loop>
-              <source src="./videos/video-1.mp4" type="video/mp4">
-              Tu navegador no admite la reproducción de videos.
-            </video>
-            <div>
-              <h2>Sucursal Pilar</h2>
-            </div>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-slide--one" id="slide-1">
+          <div class="btn-play-background display-btn-play-1">
+            <img id="btn-slide-1" src="./img/ico-play.png" alt="Play Video">
           </div>
-          <div class="swiper-slide swiper-slide--two" id="slide-2">
-            <div class="btn-play-background">
-              <img id="btn-slide-2" src="./img/ico-play.png" alt="Play Video">
-            </div>
-            <div class="btn-pause-background">
-              <img id="btn-pause-2" src="./img/ico-pausa.png" alt="Pausar Video">
-            </div>
-            <video id="video-2" disablefullscreen loop>
-              <source src="./videos/video-2.mp4" type="video/mp4">
-              Tu navegador no admite la reproducción de videos.
-            </video>
-            <div>
-              <h2>Sucursal C.A.B.A.</h2>
-            </div>
+          <div class="container-loading-1">
+            <div class="spinner"></div>
           </div>
-          <div class="swiper-slide swiper-slide--three" id="slide-3">
-            <div class="btn-play-background">
-              <img id="btn-slide-3" src="./img/ico-play.png" alt="Play Video">
-            </div>
-            <div class="btn-pause-background">
-              <img id="btn-pause-3" src="./img/ico-pausa.png" alt="Pausar Video">
-            </div>
-            <video id="video-3" disablefullscreen loop>
-              <source src="./videos/video-3.mp4" type="video/mp4">
-              Tu navegador no admite la reproducción de videos.
-            </video>
-            <div>
-              <h2>Entrenamiento Grupal</h2>
-            </div>
+          <div class="btn-pause-background">
+            <img id="btn-pause-1" src="./img/ico-pausa.png" alt="Pausar Video">
           </div>
-          <div class="swiper-slide swiper-slide--four" id="slide-4">
-            <div class="btn-play-background">
-              <img id="btn-slide-4" src="./img/ico-play.png" alt="Play Video">
-            </div>
-            <div class="btn-pause-background">
-              <img id="btn-pause-4" src="./img/ico-pausa.png" alt="Pausar Video">
-            </div>
-            <video id="video-4" disablefullscreen loop>
-              <source src="./videos/video-4.mp4" type="video/mp4">
-              Tu navegador no admite la reproducción de videos.
-            </video>
-            <div>
-              <h2>Trabajo en equipo</h2>
-            </div>
+          <video id="video-1" disablefullscreen loop>
+            <source src="./videos/video-1.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Sucursal Pilar</h2>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide swiper-slide--two" id="slide-2">
+          <div class="btn-play-background display-btn-play-2">
+            <img id="btn-slide-2" src="./img/ico-play.png" alt="Play Video">
+          </div>
+          <div class="container-loading-2">
+            <div class="spinner"></div>
+          </div>
+          <div class="btn-pause-background">
+            <img id="btn-pause-2" src="./img/ico-pausa.png" alt="Pausar Video">
+          </div>
+          <video id="video-2" disablefullscreen loop>
+            <source src="./videos/video-2.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Sucursal C.A.B.A.</h2>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--three" id="slide-3">
+          <div class="btn-play-background display-btn-play-3">
+            <img id="btn-slide-3" src="./img/ico-play.png" alt="Play Video">
+          </div>
+          <div class="container-loading-3">
+            <div class="spinner"></div>
+          </div>
+          <div class="btn-pause-background">
+            <img id="btn-pause-3" src="./img/ico-pausa.png" alt="Pausar Video">
+          </div>
+          <video id="video-3" disablefullscreen loop>
+            <source src="./videos/video-3.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Entrenamiento Grupal</h2>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-slide--four" id="slide-4">
+          <div class="btn-play-background display-btn-play-4">
+            <img id="btn-slide-4" src="./img/ico-play.png" alt="Play Video">
+          </div>
+          <div class="container-loading-4">
+            <div class="spinner"></div>
+          </div>
+          <div class="btn-pause-background">
+            <img id="btn-pause-4" src="./img/ico-pausa.png" alt="Pausar Video">
+          </div>
+          <video id="video-4" disablefullscreen loop>
+            <source src="./videos/video-4.mp4" type="video/mp4">
+            Tu navegador no admite la reproducción de videos.
+          </video>
+          <div>
+            <h2>Trabajo en equipo</h2>
+          </div>
+        </div>
       </div>
-  </article>
+      <div class="swiper-pagination"></div>
+    </div>
+  </article>  
   <article class="container-cards-servicios">
     <div class="card-service">
       <div class="card-img-shadow"><img src="./img/servicios-kinesiologia.png" alt="wanda"></div>
@@ -287,10 +310,6 @@ const footer = `
 `;
 
 
-
-
-
-
 btnInicio.addEventListener("click",()=>{
   containerSection.innerHTML = ``;
   containerSection.innerHTML = index;
@@ -298,6 +317,7 @@ btnInicio.addEventListener("click",()=>{
   containerFooter.innerHTML = footer;
 
   const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+  const btnReloadVideos = document.querySelector("#btn-reload-videos");
 
   btnConocenosMas.addEventListener("click",()=>{
 
@@ -310,7 +330,45 @@ btnInicio.addEventListener("click",()=>{
 
 videosParaMostrar();
 
+btnReloadVideos.addEventListener("click", ()=>{
+
+  recargarVideos();
+
+})
+
+
 });
+
+function recargarVideos() {
+
+  containerSection.innerHTML = ``;
+  containerSection.innerHTML = index;
+  const btnConocenosMas = document.querySelector(".boton-conocenos-mas");
+  const btnReloadVideos = document.querySelector("#btn-reload-videos");
+
+  btnConocenosMas.addEventListener("click",()=>{
+
+    containerSection.innerHTML = ``;
+    containerSection.innerHTML = quienesSomos;
+    containerFooter.innerHTML = "";
+    containerFooter.innerHTML = footer;
+  
+  });
+
+  videosParaMostrar();
+
+  btnReloadVideos.addEventListener("click", ()=>{
+
+    recargarVideos();
+  
+  })
+}
+
+btnReloadVideos.addEventListener("click", ()=>{
+
+  recargarVideos();
+
+})
 
 btnQuienesSomos.addEventListener("click",()=>{
   containerSection.innerHTML = ``;
@@ -352,11 +410,43 @@ function detenerVideo(video) {
   document.querySelector(`#${video}`).currentTime = 0;
 }
 
+function actualizarVideos() {
+  document.getElementById("video-1").addEventListener("loadedmetadata", ()=> {
+
+    document.querySelector(".container-loading-1").style.display= "none";
+    document.querySelector(".display-btn-play-1").style.display= `inherit`;
+    descargoVideo1 = true;
+  });
+
+  document.getElementById("video-2").addEventListener("loadedmetadata", ()=> {
+
+    document.querySelector(".container-loading-2").style.display = "none";
+    document.querySelector(".display-btn-play-2").style.display=`inherit`;
+    descargoVideo2 = true;
+    
+  });
+
+  document.getElementById("video-3").addEventListener("loadedmetadata", ()=> {
+
+    document.querySelector(".container-loading-3").style.display = "none";
+    document.querySelector(".display-btn-play-3").style.display=`inherit`;
+    descargoVideo3 = true;
+
+  });
+
+  document.getElementById("video-4").addEventListener("loadedmetadata", ()=> {
+
+    document.querySelector(".container-loading-4").style.display = "none";
+    document.querySelector(".display-btn-play-4").style.display=`inherit`;
+    descargoVideo4 = true;
+
+  });
+}
 
 
 function videosParaMostrar() {
 
-
+  
   const slidePlay1 = document.getElementById("btn-slide-1");
   const slidePlay2 = document.getElementById("btn-slide-2");
   const slidePlay3 = document.getElementById("btn-slide-3");
@@ -366,33 +456,8 @@ function videosParaMostrar() {
   const slidePause3 = document.getElementById("btn-pause-3");
   const slidePause4 = document.getElementById("btn-pause-4");
 
-  document.getElementById("video-1").addEventListener("canplaythrough", ()=> {
+  actualizarVideos();
 
-    document.querySelector(".container-loading-1").style.display= "none";
-    document.querySelector(".display-btn-play-1").style.display= `inherit`;
-    
-  });
-
-  document.getElementById("video-2").addEventListener("canplaythrough", ()=> {
-
-    document.querySelector(".container-loading-2").style.display = "none";
-    document.querySelector(".display-btn-play-2").style.display=`inherit`;
-    
-  });
-
-  document.getElementById("video-3").addEventListener("canplaythrough", ()=> {
-
-    document.querySelector(".container-loading-3").style.display = "none";
-    document.querySelector(".display-btn-play-3").style.display=`inherit`;
-    
-  });
-
-  document.getElementById("video-4").addEventListener("canplaythrough", ()=> {
-
-    document.querySelector(".container-loading-4").style.display = "none";
-    document.querySelector(".display-btn-play-4").style.display=`inherit`;
-    
-  });
 
   var swiper = new Swiper(".swiper", {
 
