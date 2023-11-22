@@ -34,12 +34,13 @@
 .container-cards-servicios .card-service .card-img-shadow {
   filter: drop-shadow(rgba(140,140,140,1) 0px 0px 10px);
 }
+
 .container-cards-servicios .card-service .card-img-shadow img {
+
   width: 100%;
   height: 170px;
-  object-fit: cover;
-  object-position: left;
-  margin-bottom: 30px;
+  object-fit:fill;
+  margin-bottom: 20px;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
           clip-path: polygon(0 0, 100% 0, 100% 100%, 30px 100%, 0 calc(100% - 30px));
 }
@@ -64,11 +65,12 @@ font-weight: 600;
   transform: translateY(30px);
 }
 .container-cards-servicios .card-service:nth-child(5) .card-content p {
-  transform: translateY(25px);
+  transform: translateY(20px);
 }
 .container-cards-servicios .card-service:nth-child(6) .card-content p {
   transform: translateY(35px);
 }
+
 .container-cards-servicios .card-service h2 {
   border-radius: 10px;
   padding: 5px;
