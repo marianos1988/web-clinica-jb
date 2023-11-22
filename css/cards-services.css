@@ -21,7 +21,7 @@
 .container-cards-servicios .card-service {
   background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(140,140,140,1) 100%);
   width: 230px;
-  height: 480px;
+  height: 630px;
   -webkit-clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
           clip-path: polygon(0 0, 200px 0, 210px 10px, 280px 10px, 290px 0, 100% 0, 100% 150px, 290px 160px, 290px 300px, 100% 310px, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0 400px, 10px 390px, 10px 100px, 0 90px);
   transition: all 0.2s linear;
@@ -45,6 +45,19 @@
 }
 .container-cards-servicios .card-service .card-content {
   margin: 0px 30px;
+}
+.container-cards-servicios .card-service .card-content p {
+text-align: center;
+font-size: medium;
+}
+.container-cards-servicios .card-service:nth-child(1) .card-content p {
+  transform: translateY(40px);
+}
+.container-cards-servicios .card-service:nth-child(2) .card-content p {
+  transform: translateY(40px);
+}
+.container-cards-servicios .card-service:nth-child(4) .card-content p {
+  transform: translateY(30px);
 }
 .container-cards-servicios .card-service h2 {
   border-radius: 10px;

@@ -53,6 +53,7 @@
   color: white;
   margin-bottom: 24px;
 
+
 }
 
 .card button {
@@ -79,10 +80,15 @@
   color: inherit;
   color: rgba(17,91,92,1) 0%;
 }
+@media (min-width:741px) and (max-width:816px) {
+.card {
+  width: 85%;
+}
+}
 
 @media (width <= 740px) {
   .card {
-    margin: 0 40px;
+    margin: 10px 40px;
     padding-left: 50px;
     padding-right: 50px;
     width: 100%;
@@ -99,7 +105,7 @@
     object-fit:fill;
     margin: -100px 0 30px 0;
     width: 100%;
-    max-width: 1000px;
+    max-width: 430px;
   }
 }
 
