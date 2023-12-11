@@ -30,7 +30,7 @@
 
 
 .sucursal-footer .item-footer {
-    width: 100%;
+
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -39,17 +39,19 @@
 }
 
 .sucursal-footer .item-footer .ico-footer {
-    width: 20%;
-    transform: translateX(-40px);
+    /* width: 20%; */
+    /* transform: translateX(-40px); */
+    margin-right: 45px;
 }
 
-.sucursal-footer .item-footer .text-direccion {
-    width: 270px;
-    height: 45px;
+.sucursal-footer .item-footer .text-direccion p {
+    width: 280px;
+    height: 48px;
 
 }
 
 .ico-footer img {
+
     width: 40px;
     height: 40px;
     padding: 3px 10px 3px 10px;
