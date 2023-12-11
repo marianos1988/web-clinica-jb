@@ -187,9 +187,10 @@ const index = `
     <div class="card-service">
       <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
       <div class="card-content">
-        <h2>Programa para deportias profesionales</h2>
+        <h2>Programa para deportistas profesionales</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?
+          A cargo del Lic. Franco Bombicino, el programa incluye desde la rehabilitación, prevención y puesta a punto -off season- realizando trabajo de campo y de consultorio. 
+          Este plan se realiza también de forma internacional ofreciendo al atleta que el profesional viaje al destino donde se encuentra y trabajar desde allí en conjunto.
         </p>
       </div>
     </div>
@@ -199,7 +200,8 @@ const index = `
       <div class="card-content">
         <h2>Otras Especialidades</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam rerum consectetur commodi, ducimus ipsam tenetur tempore?
+          En el centro trabajamos con otras especialidades como: ortopedia, clínica médica, cardiología. 
+          Para lograr un trabajo interdisciplinario total también trabajamos de forma estrecha y con vínculo directo con psicólogos , dermatólogos y especialistas en diagnóstico por imagen.
         </p>
       </div>
     </div>
@@ -232,40 +234,45 @@ const contacto = `
   <article class="container-contact">
     <div class="container-sucursales-contacto">
       <div class="columna-sucursal">
-        <h3>Villa Urquiza - C.A.B.A.</h3>
-        <img class="img-suc-incas" src="./img/sede-incas.jpg" alt="">
+        <h3>Suc. Villa Urquiza - C.A.B.A.</h3>
+        <div class="container-img">
+          <img class="img-suc-incas" src="./img/sede-incas.jpg" alt="">
+        </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domicilio"></a></div>
           <div class="texto-direccion-contacto">
-            <p>Av. De Los Incas 5150 - C1427</p>
+            <p>Av. Los Incas 5150, 5to Piso - C1427</p>
           </div>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
-          <p>011 1234-1234</p>
+          <div class="ico-contacto"><a href="tel:+5401145226668"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <p>011 4522-6668</p>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-          <p>scaba@gmail.com</p>
+          <div class="ico-contacto"><a href="mailto:tfbombicino@gmail.com"><img src="./img/email.png" alt="Email"></a></div>
+          <p>tfbombicino@gmail.com</p>
         </div>
       </div>
 
       <div class="columna-sucursal">
-        <h3>Pilar - Buenos Aires</h3>
-        <img class="img-suc-pilar" src="./img/sede-pilar.jpg" alt="">
+        <h3>Suc. Pilar - Buenos Aires</h3>
+        <div class="container-img">
+          <img class="img-suc-pilar" src="./img/sede-pilar.jpg" alt="">
+        </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+          <div class="ico-contacto"><a href="https://maps.app.goo.gl/BvuG9Tg7AVk2VVUj7" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
           <div class="texto-direccion-contacto">
-            <p>Av. Moreno 560 - C1520</p>
+            <p>
+              Los Crisantemos 392 - Skyglass 3 Oficinas 103/104</p>
           </div>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
-          <p>011 4444-5555</p>
+          <div class="ico-contacto"><a href="tel:+5401139867300"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+          <p>011 3986-7300</p>
         </div>
         <div class="item-sucursal-contacto">
-          <div class="ico-contacto"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-          <p>pilar@gmail.com</p>
+          <div class="ico-contacto"><a href="mailto:tfbombicino@gmail.com"><img src="./img/email.png" alt="Email"></a></div>
+          <p>tfbombicino@gmail.com</p>
         </div>
       </div>
     </div>
@@ -284,38 +291,38 @@ const contacto = `
 const footer = `
   <div class="group-sucursales-footer">
     <div class="sucursal-footer">
-      <h3>Villa Urquiza - C.A.B.A.</h3>
+      <h3>Suc. Villa Urquiza - C.A.B.A.</h3>
       <div class="item-footer">
         <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
         <div class="texto-direccion">
-          <p>Av. De Los Incas 5150 - C1427</p>
+          <p>Av. Los Incas 5150, 5to Piso - C1427</p>
         </div>
       </div>
       <div class="item-footer">
-        <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
-        <p>011 1234-1234</p>
+        <div class="ico-footer"><a href="tel:+5401145226668"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+        <p>011 4522-6668</p>
       </div>
       <div class="item-footer">
-        <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-        <p>scaba@gmail.com</p>
+        <div class="ico-footer"><a href="mailto:tfbombicino@gmail.com"><img src="./img/email.png" alt="Email"></a></div>
+        <p>tfbombicino@gmail.com</p>
       </div>
     </div>
 
     <div class="sucursal-footer">
-      <h3>Pilar - Buenos Aires</h3>
+      <h3>Suc. Pilar - Buenos Aires</h3>
       <div class="item-footer">
-        <div class="ico-footer"><a href="https://goo.gl/maps/uyJ6ZJUCHnYfCskS6" target="_blank"><img src="./img/location-ico.png" alt="Domocilio"></a></div>
+        <div class="ico-footer"><a href="https://maps.app.goo.gl/BvuG9Tg7AVk2VVUj7" target="_blank"><img src="./img/location-ico.png" alt="Domicilio"></a></div>
         <div class="texto-direccion">
-          <p>Av. Moreno 560 - C1520</p>
+          <p>Los Crisantemos 392 - Skyglass 3 Oficinas 103/104</p>
         </div>
       </div>
       <div class="item-footer">
-        <div class="ico-footer"><a href="tel:+12341234"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
-        <p>011 4444-5555</p>
+        <div class="ico-footer"><a href="tel:+5401139867300"><img src="./img/phone-ico.png" alt="Telefono"></a></div>   
+        <p>011 3986-7300</p>
       </div>
       <div class="item-footer">
-        <div class="ico-footer"><a href="mailto:correo@example.com"><img src="./img/email.png" alt="Email"></a></div>
-        <p>pilar@gmail.com</p>
+        <div class="ico-footer"><a href="mailto:tfbombicino@gmail.com"><img src="./img/email.png" alt="Email"></a></div>
+        <p>tfbombicino@gmail.com</p>
       </div>
     </div>
   </div> 

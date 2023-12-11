@@ -41,7 +41,7 @@
 }
 
 .item-instagram div p {
-	transform: translateX(30px);
+	transform: translateX(40px);
 }
 
 .container-sucursales-contacto {
@@ -57,12 +57,14 @@
 .columna-sucursal {
 	display: grid;
 	justify-content: center;
+	align-items: center;
     color: white;
     font-size: 20px;
 	width: 45%;
 	border-radius: 30px;
 	background: linear-gradient(0deg, rgba(17,91,92,1) 0%, rgba(0,133,100,1) 100%);
 	min-width: 342px;
+	min-height: 635px;
 	padding-bottom: 25px;
 
 }
@@ -71,23 +73,22 @@
 	text-align: center;
 
 }
-
-.columna-sucursal img {
+.columna-sucursal .container-img {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.columna-sucursal .container-img img {
 	
 	width: 300px;
 	height: 300px;
+
 	object-fit: cover;
 	border-radius: 10%;
 	-webkit-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
     box-shadow: -8px 10px 54px 0px rgba(0,0,0,0.75);
 	margin-bottom: 20px;
-}
-.columna-sucursal .img-suc-incas {
-	transform: translateX(40px);
-}
-.columna-sucursal .img-suc-pilar {
-	transform: translateX(10px);
 }
 
 .columna-sucursal .item-sucursal-contacto {
@@ -98,6 +99,12 @@
     flex-direction: row;
     align-items: center;
 	justify-content: left;
+}
+
+.item-sucursal-contacto .texto-direccion-contacto {
+	height: 90px;
+	width: 270px;
+
 }
 
 .ico-contacto img {
@@ -122,10 +129,6 @@
 	.item-sucursal-contacto .texto-direccion-contacto {
 		height: 86px;
 		width: 270px;
-		transform: translateY(8px);
-	}
-	.columna-sucursal .img-suc-pilar {
-		transform: translateX(35px);
 	}
 
 }
