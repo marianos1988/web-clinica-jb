@@ -175,7 +175,7 @@ const index = `
     </div>
 
     <div class="card-service">
-      <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+      <div class="card-img-shadow"><img src="./img/rpg-osteo.jpg" alt="wanda"></div>
       <div class="card-content">
         <h2>Osteopatía y RPG</h2>
         <p>
@@ -196,7 +196,7 @@ const index = `
     </div>
 
     <div class="card-service">
-      <div class="card-img-shadow"><img src="./img/servicios-entrenamientoPersonalizado.JPG" alt="wanda"></div>
+      <div class="card-img-shadow"><img src="./img/servicios-otras-especialidades.png" alt="wanda"></div>
       <div class="card-content">
         <h2>Otras Especialidades</h2>
         <p>
@@ -222,10 +222,7 @@ const quienesSomos = `
   <article class="container-quienes-somos">
     <h2>Quienes Somos...</h2>
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eaque a ex est commodi aspernatur culpa aliquid consectetur tempora suscipit quis earum repudiandae asperiores, tenetur, labore dolorum. Exercitationem, praesentium totam.
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem iste incidunt in unde quisquam ipsa autem amet impedit fuga adipisci, nulla hic necessitatibus excepturi, pariatur minima. Eaque magnam incidunt tenetur?
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab placeat inventore eius alias quae reprehenderit nihil, veniam aperiam delectus iure aut nesciunt exercitationem laboriosam. Tempore asperiores aliquid architecto impedit corporis!
-      lorem
+    Somos un centro especializado en medicina deportiva. Pioneros en acompañar a atletas  profesionales y amateurs en cada etapa deportiva; a través del trabajo interdisciplinario de nuestros  profesionales de amplia trayectoria. Nos mantenemos en constante formación y capacitación académica para estar actualizados, sin embargo creemos que la calidez humana y sencillez de todo nuestro staff es lo más importante para prestar la mejor atención y lograr el gran objetivo final que es mejorar la calidad de vida de aquellos que nos eligen día a día.
     </p>
   </article>
 `;

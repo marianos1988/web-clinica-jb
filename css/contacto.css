@@ -41,7 +41,9 @@
 }
 
 .item-instagram div p {
-	transform: translateX(40px);
+	font-size: 20px;
+	transform: translate(50px,-10px);
+
 }
 
 .container-sucursales-contacto {
