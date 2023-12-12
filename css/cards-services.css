@@ -83,4 +83,18 @@ font-weight: 1000;
 }
 
 
+@media (min-width:360px) and (max-width: 410px) {
+  .container-cards-servicios .card-service .card-content p {
+
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .container-cards-servicios .card-service {
+    height: 650px;
+  }
+
+}
+
+
 
